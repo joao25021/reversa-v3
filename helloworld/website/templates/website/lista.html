@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'crud/css/bootstrap.css' %}"/>
+    </head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">sistem v1</a>
+        </div>
+    </nav>
+    <div class="col-md-3"></div>
+    <div class="col-md-6 well">
+        <h3 class="text-primary">lista de revesas <li>
+ <td><a class="btn btn-sm btn-warning" href="{% url 'website:index' %}"><span class="glyphicon glyphicon-edit"></span> Página Inicial</a></td>
+ <td><a class="btn btn-sm btn-warning" href="{% url 'website:cadastra_funcionario' %}"><span class="glyphicon glyphicon-edit"></span> Cadastrar reversa</a></td>
+ <td><a class="btn btn-sm btn-warning" href="{% url 'website:lista_funcionarios' %}"><span class="glyphicon glyphicon-edit"></span> Lista de reversa</a></td>
+		    </tr></h3>
+        
+</thead>
+    </ul>
+
+    <div style="max-width: 50%;">
+        <table style="border: 1px solid #BBB; width: 100%;">
+            <thead>
+              <tr style="width: 249px;
+                           height: 48px;
+                           border: 1px solid #707070;
+                           background-color: #96cafd;">
+                    <td><strong>numero</strong></td>
+                    <td><b>vendedor</b></td>
+                    <td><b>data</b></td>
+                    <td><b>nome</b></td>
+                    <td><b>NfDeOrigem</b></td>
+                    <td><b>NfDeEntrada</b></td>
+                    <td><b>NfDeSAida</b></td>
+                    <td><b>defeito</b></td>
+                    <td><b>NumeroConserto</b></td>
+                    <td><b>transpotadora</b></td>
+                    <td><b>CustoColeta</b></td>
+                    <td><b>CustoIda</b></td>
+                    <td><b>CustoVenda</b></td>
+                    
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for funcionario in funcionarios %}
+                    <tr>
+                        <td>{{ funcionario.numero }}</td>
+                        <td>{{ funcionario.vendedor }}</td>
+                        <td>{{ funcionario.data }}</td>
+                        <td>{{ funcionario.nome }}</td>
+                        <td>{{ funcionario.NfDeOrigem }}</td>
+                        <td>{{ funcionario.NfDeEntrada }}</td>
+                        <td>{{ funcionario.NfDeSAida }}</td>
+                        <td>{{ funcionario.efeito }}</td>
+                        <td>{{ funcionario.NumeroConserto }}</td>
+                        <td>{{ funcionario.transpotadora }}</td>
+                        <td>{{ funcionario.CustoColeta }}</td>
+                        <td>{{ funcionario.CustoIda }}</td>
+                        <td>{{ funcionario.CustoVenda }}</td>
+                        <td><center><a class="btn btn-sm btn-warning" href="{% url 'website:atualiza_funcionario' pk=funcionario.id %}"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a class="btn btn-sm btn-danger" href="{% url 'website:deleta_funcionario' pk=funcionario.id %}"><span class="glyphicon glyphicon-trash"></span> Delete</a></center></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

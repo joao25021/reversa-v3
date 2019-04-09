@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'crud/css/bootstrap.css' %}"/>
+    </head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">sistem v1</a>
+        </div>
+    </nav>
+    <div class="col-md-3"></div>
+    <div class="col-md-6 well">
+<h1>Página de Exclusão de reversa</h1>
+<td><a class="btn btn-sm btn-warning" href="{% url 'website:index' %}"><span class="glyphicon glyphicon-edit"></span> Página Inicial</a></td>
+                       <td><a class="btn btn-sm btn-warning" href="{% url 'website:cadastra_funcionario' %}"><span class="glyphicon glyphicon-edit"></span> Cadastrar reversa</a></td>
+                       <td><a class="btn btn-sm btn-warning" href="{% url 'website:lista_funcionarios' %}"><span class="glyphicon glyphicon-edit"></span> Lista de reversa</a></td>
+
+
+    <form method="post" style="border: 1px solid #AAA; margin: 64px auto; padding: 32px; width: 50%;">
+        <!-- É necessário colocar o código abaixo em toda página que                   -->
+        <!-- contenha um formulário para evitar o ataque de Cross Site Request Forgery -->
+        {% csrf_token %}
+
+        Você tem certeza que quer excluir a reversa <b>{{ funcionario.nome }}</b>? <br><br>
+
+        <button type="button">
+            <a href="{% url 'website:lista_funcionarios' %}">Cancelar</a>
+        </button>
+        <button>Excluir</button>
+    </form>
+</body>
+</html>

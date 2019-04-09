@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'crud/css/bootstrap.css' %}"/>
+    </head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">sistem v1</a>
+        </div>
+    </nav>
+    <div class="col-md-3"></div>
+    <div class="col-md-6 well">
+    <h1>Página Inicial</h1>
+
+    <ul>
+     <thead>
+             <tr style="width: 249px;
+                     height: 48px;
+                     border: 1px solid #707070;
+                     background-color: #96cafd;">
+                       <td><a class="btn btn-sm btn-warning" href="{% url 'website:index' %}"><span class="glyphicon glyphicon-edit"></span> Página Inicial</a></td>
+                       <td><a class="btn btn-sm btn-warning" href="{% url 'website:cadastra_funcionario' %}"><span class="glyphicon glyphicon-edit"></span> Cadastrar reversa</a></td>
+                       <td><a class="btn btn-sm btn-warning" href="{% url 'website:lista_funcionarios' %}"><span class="glyphicon glyphicon-edit"></span> Lista de reversa</a></td> 
+             
+             </tr>
+    </form>
+     <thead>
+    </ul>
+</body>
+</html>
