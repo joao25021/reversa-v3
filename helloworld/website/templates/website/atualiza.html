@@ -2,23 +2,42 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
-        {% load static %}
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">sistem v1</a>
-        </div>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#">AFJ v1.1</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      
+      <li class="nav-item">
+        <a class="nav-link " href="{% url 'website:index' %}">Página Inicial</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'website:cadastra_funcionario' %}">Cadastrar reversa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'website:lista_funcionarios' %}">Lista de reversa</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
     <div class="col-md-3"></div>
     <div class="col-md-6 well">
     <h1>Página de Atualização de reversa</h1>
 
     <ul>
-        <td><a class="btn btn-sm btn-warning" href="{% url 'website:index' %}"><span class="glyphicon glyphicon-edit"></span> Página Inicial</a></td>
-        <td><a class="btn btn-sm btn-warning" href="{% url 'website:cadastra_funcionario' %}"><span class="glyphicon glyphicon-edit"></span> Cadastrar reversa</a></td>
-        <td><a class="btn btn-sm btn-warning" href="{% url 'website:lista_funcionarios' %}"><span class="glyphicon glyphicon-edit"></span> Lista de reversa</a></td>
+        
     </ul>
 
     <form method="post">
@@ -27,8 +46,32 @@
         {% csrf_token %}
 
         {{ form }}
+             
+        
+   <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Update
+</button>
 
-        <button type="submit" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-edit"></span> Update</button>
-    </form>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">salvar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Deseja salvar todas as informaçoes atualizadas
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">cancelar</button>
+          <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">salvar </button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
