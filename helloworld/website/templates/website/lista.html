@@ -77,7 +77,56 @@
         
         <!-- Modal body -->
         <div class="modal-body">
-          Modal body..
+    <form method="post">
+        <!-- É necessário colocar o código abaixo em toda página que                   -->
+        <!-- contenha um formulário para evitar o ataque de Cross Site Request Forgery -->
+      {% csrf_token %}
+
+      {{ form }}
+        <input type="hidden" name="csrfmiddlewaretoken" value="6LsyrowjuUpwGGE1S20bRgB1KNI7v5B4fyfIG1JVlKKsQNdWsGqrImQd7PZQJrv3">
+
+        <label for="id_numero">Numero:</label><input type="text" name="numero" value="joao" maxlength="255" required="" id="id_numero">
+        <label for="id_vendedor">Vendedor:</label><input type="text" name="vendedor" value="dsa" maxlength="25" required="" id="id_vendedor">
+        <label for="id_data">Data:</label><input type="text" name="data" value="dsa" maxlength="11" required="" id="id_data">
+        <label for="id_nome">Nome:</label><input type="text" name="nome" value="joao p" maxlength="255" required="" id="id_nome">
+        <label for="id_NfDeOrigem">NfDeOrigem:</label><input type="text" name="NfDeOrigem" value="das" maxlength="5" required="" id="id_NfDeOrigem">
+        <label for="id_NfDeEntrada">NfDeEntrada:</label><input type="number" name="NfDeEntrada" value="3" min="0" required="" id="id_NfDeEntrada">
+        <label for="id_NfDeSAida">NfDeSAida:</label><input type="number" name="NfDeSAida" value="1" min="0" required="" id="id_NfDeSAida">
+        <label for="id_efeito">Efeito:</label><input type="number" name="efeito" value="2" min="0" required="" id="id_efeito">
+        <label for="id_NumeroConserto">NumeroConserto:</label><input type="number" name="NumeroConserto" value="1" min="0" required="" id="id_NumeroConserto">
+        <label for="id_transpotadora">Transpotadora:</label><input type="text" name="transpotadora" value="dsa" maxlength="255" required="" id="id_transpotadora">
+        <label for="id_CustoColeta">CustoColeta:</label><input type="number" name="CustoColeta" value="0.03" step="0.01" required="" id="id_CustoColeta">
+        <label for="id_CustoIda">CustoIda:</label><input type="number" name="CustoIda" value="0.01" step="0.01" required="" id="id_CustoIda">
+        <label for="id_CustoVenda">CustoVenda:</label><input type="number" name="CustoVenda" value="0.02" step="0.01" required="" id="id_CustoVenda">
+             
+        
+   <!-- Button trigger modal (tenta fazer assim com a outra janela) -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Update
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">salvar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Deseja salvar todas as informaçoes atualizadas
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">cancelar</button>
+          <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">salvar </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</form>
         </div>
         
         <!-- Modal footer -->
