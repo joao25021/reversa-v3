@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Funcionario(models.Model):
 
     numero= models.CharField( 

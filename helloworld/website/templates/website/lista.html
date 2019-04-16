@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+        {% load static %}
+        {% load crispy_forms_tags %}
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -32,32 +34,82 @@
     </form>
   </div>
 </nav>
+<div class="container">
+  
+  
+  <ul class="nav nav-tabs nav-justified">
+    <li class="nav-item">
+      <a class="nav-link active" id="nav-home-tab1" data-toggle="tab" href="#nav-home1">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="nav-home-tab2" data-toggle="tab" href="#nav-home2">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"id="nav-home-tab3" data-toggle="tab" href="#nav-home3">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+</div>
+</div>
     <div class="col-md-3"></div>
     <div class="col-md-6 well">
         <h3 class="text-primary">lista de revesas 
  
 		    </tr></h3>
-<table class="table table-hover table-dark">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">nome</th>
-      <th scope="col">NF entrada</th>
-      <th scope="col">data e-mail</th>
-    </tr>
-  </thead>
-        <tbody>
+  <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                              <table class="table table-hover table-dark">
+                                  <thead>
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">nome</th>
+                                        <th scope="col">NF entrada</th>
+                                        <th scope="col">data e-mail</th>
+                                      </tr>
+                                  </thead>
+                            </div>
+  <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                              <table class="table table-hover table-dark">
+                                  <thead>
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">nome</th>
+                                        <th scope="col">NF entrada</th>
+                                        <th scope="col">data e-mail</th>
+                                      </tr>
+                                  </thead>
+                            </div>
+  <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                              <table class="table table-hover table-dark">
+                                  <thead>
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">nome</th>
+                                        <th scope="col">NF entrada</th>
+                                        <th scope="col">data e-mail</th>
+                                      </tr>
+                                  </thead>
+                            </div>                                                    
                 {% for funcionario in funcionarios %}
                     <tr> 
-                        <td>{{ funcionario.id }}</td>
-                        <td>{{ funcionario.nome }}</td>
-                        <td>{{ funcionario.NfDeEntrada }}</td>
+                        <td>{{ funcionario.numero }}</td>
+                        <td>{{ funcionario.vendedor }}</td>
                         <td>{{ funcionario.data }}</td>
-                         <td> <!-- Button to Open the Modal -->
-                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                                Open modal
-                              </button>
-                          </td>
+                        <td>{{ funcionario.nome }}</td>
+                        <td>{{ funcionario.NfDeOrigem }}</td>
+                        <td>{{ funcionario.NfDeEntrada }}</td>
+                        <td>{{ funcionario.NfDeSAida }}</td>
+                        <td>{{ funcionario.efeito }}</td>
+                        <td>{{ funcionario.NumeroConserto }}</td>
+                        <td>{{ funcionario.transpotadora }}</td>
+                        <td>{{ funcionario.CustoColeta }}</td>
+                        <td>{{ funcionario.CustoIda }}</td>
+                        <td>{{ funcionario.CustoVenda }}</td>
+                         
                         <td><center><a class="btn btn-sm btn-warning" href="{% url 'website:atualiza_funcionario' pk=funcionario.id %}"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a class="btn btn-sm btn-danger" href="{% url 'website:deleta_funcionario' pk=funcionario.id %}"><span class="glyphicon glyphicon-trash"></span> Delete</a></center></td>
                     </tr>
                 {% endfor %}
@@ -77,28 +129,13 @@
         
         <!-- Modal body -->
         <div class="modal-body">
-    <form method="post">
+        
+            <form method="post">
         <!-- É necessário colocar o código abaixo em toda página que                   -->
         <!-- contenha um formulário para evitar o ataque de Cross Site Request Forgery -->
-      {% csrf_token %}
+          {% csrf_token %}
 
-      {{ form }}
-        <input type="hidden" name="csrfmiddlewaretoken" value="6LsyrowjuUpwGGE1S20bRgB1KNI7v5B4fyfIG1JVlKKsQNdWsGqrImQd7PZQJrv3">
-
-        <label for="id_numero">Numero:</label><input type="text" name="numero" value="joao" maxlength="255" required="" id="id_numero">
-        <label for="id_vendedor">Vendedor:</label><input type="text" name="vendedor" value="dsa" maxlength="25" required="" id="id_vendedor">
-        <label for="id_data">Data:</label><input type="text" name="data" value="dsa" maxlength="11" required="" id="id_data">
-        <label for="id_nome">Nome:</label><input type="text" name="nome" value="joao p" maxlength="255" required="" id="id_nome">
-        <label for="id_NfDeOrigem">NfDeOrigem:</label><input type="text" name="NfDeOrigem" value="das" maxlength="5" required="" id="id_NfDeOrigem">
-        <label for="id_NfDeEntrada">NfDeEntrada:</label><input type="number" name="NfDeEntrada" value="3" min="0" required="" id="id_NfDeEntrada">
-        <label for="id_NfDeSAida">NfDeSAida:</label><input type="number" name="NfDeSAida" value="1" min="0" required="" id="id_NfDeSAida">
-        <label for="id_efeito">Efeito:</label><input type="number" name="efeito" value="2" min="0" required="" id="id_efeito">
-        <label for="id_NumeroConserto">NumeroConserto:</label><input type="number" name="NumeroConserto" value="1" min="0" required="" id="id_NumeroConserto">
-        <label for="id_transpotadora">Transpotadora:</label><input type="text" name="transpotadora" value="dsa" maxlength="255" required="" id="id_transpotadora">
-        <label for="id_CustoColeta">CustoColeta:</label><input type="number" name="CustoColeta" value="0.03" step="0.01" required="" id="id_CustoColeta">
-        <label for="id_CustoIda">CustoIda:</label><input type="number" name="CustoIda" value="0.01" step="0.01" required="" id="id_CustoIda">
-        <label for="id_CustoVenda">CustoVenda:</label><input type="number" name="CustoVenda" value="0.02" step="0.01" required="" id="id_CustoVenda">
-             
+           {{ form }}
         
    <!-- Button trigger modal (tenta fazer assim com a outra janela) -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -133,7 +170,6 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
-        
       </div>
     </div>
   </div>

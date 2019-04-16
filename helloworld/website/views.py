@@ -18,6 +18,12 @@ class FuncionarioListView(ListView):
     template_name = "website/lista.html"
     model = Funcionario
     context_object_name = "funcionarios"
+    class FuncionarioUpdateView(UpdateView):
+     template_name = "website/lista.html"
+     model = Funcionario
+     fields = '__all__'
+     context_object_name = 'funcionario'
+     success_url = reverse_lazy("website:lista_funcionarios")
 
 
 # CADASTRAMENTO DE FUNCIONÁRIOS
