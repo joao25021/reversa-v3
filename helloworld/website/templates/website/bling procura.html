@@ -1,0 +1,1196 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vendas - Bling</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+			<link rel="icon" href="https://www.bling.com.br/favicon.ico" type="image/x-icon" />
+	
+	<link rel="stylesheet" type="text/css" href="https://www.bling.com.br/styles/print-1556051119.css" media="print"/>	<link rel="stylesheet" type="text/css" href="https://www.bling.com.br/libs/m/f=styles/jquery.ui.autocomplete.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="styles/chosen.min.css" media="screen" />
+
+	<script type="text/javascript" src="https://www.bling.com.br/libs/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="https://www.bling.com.br/libs/jquery-ui-1.10.3.custom.min.js"></script>
+
+
+		<link rel="stylesheet" type="text/css" href="styles/ui/jquery-ui-1.9.0.custom.min.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="libs/toastr/toastr.css" media="screen" />
+	<script type="text/javascript" src="https://www.bling.com.br/libs/m/f=libs/jstree.min-3.1.1.js,libs/jquery.boxy.js,libs/jquery.history.js,libs/date.js,libs/name_ui.js,libs/jquery.contextmenu.js,libs/jquery.numberformatter-1.1.2.js,libs/ui-1.1.js,libs/micoxUpload.js,libs/jquery.tipsy.js,libs/jquery.ui.datepicker.localization.js,libs/jquery-ui-timepicker-addon.js,libs/faye.min.js,libs/tabex.min.js,libs/toastr/toastr.min.js,libs/jquery.hotkeys-0.7.9.min.js,libs/jquery.serialize-object.js"></script>
+	<script type="text/javascript" src="https://www.bling.com.br/libs/notification-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/libs/utils-1556051119.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/ui/jquery-ui-1.10.3.custom.min.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="styles/ui/jquery-ui.organisys.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="https://www.bling.com.br/site/comuns/css/bootstrap.min-1556051119.css" /><script type="text/javascript" src="https://www.bling.com.br/site/comuns/js/bootstrap.min-1556051119.js"></script><link rel="stylesheet" type="text/css" href="https://www.bling.com.br/styles/style-1.7-1556051119.css" media="screen"/><link rel="stylesheet" type="text/css" href="https://www.bling.com.br/styles/bling-mobile-1556051119.css" media="screen"/><script type="text/javascript" src="https://www.bling.com.br/templates/form.vendas-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/templates/form.venda.itens-1556218582.js"></script><script type="text/javascript" src="https://www.bling.com.br/templates/impressao.comprovante-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/templates/calculo.comissao-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/libs/mascaras-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/libs/jquery.print-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/libs/jquery.print.style-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/templates/form.etiqueta.gerar-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/templates/form.integracoes.logisticas.uteis-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/templates/form.logisticas.integracoes.gerais-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/templates/form.correios.objeto.popup-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/templates/form.correios.rastro.objeto.popup-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/templates/form.integracoes.logisticas.objs-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/scripts/searchProdutos-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/scripts/popupPeriod-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/templates/form.cupom.fiscal-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/templates/form.cupom.fiscal.operacoes-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/utils/javaConnection-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/templates/form.progress.popup-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/libs/hopscotch/hopscotch.min-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/templates/form.historico.compras.vendas.cliente.popup-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/templates/shortcuts-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/libs/chosen.jquery.min-1556051119.js"></script><link rel="stylesheet" type="text/css" href="https://www.bling.com.br/styles/chosen-1556051119.css" /><script type="text/javascript" src="https://www.bling.com.br/libs/jquery.mask.min-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/libs/js/jquery.treeview-1556051119.js"></script><script type="text/javascript" src="https://www.bling.com.br/templates/components/contato-rapido/contato.rapido-1556051119.js"></script><script type="text/javascript">
+var xajaxRequestUri="https://www.bling.com.br/services/vendas.server.php";
+var xajaxDebug=false;
+var xajaxStatusMessages=false;
+var xajaxWaitCursor=true;
+var xajaxDefinedGet=0;
+var xajaxDefinedPost=1;
+var xajaxLoaded=false;
+function xajax_incluirVenda(){return xajax.call("#services\\vendas\\#incluirVenda", arguments, 1);}
+function xajax_excluirVendas(){return xajax.call("#services\\vendas\\#excluirVendas", arguments, 1);}
+function xajax_obterVenda(){return xajax.call("#services\\vendas\\#obterVenda", arguments, 1);}
+function xajax_salvarVenda(){return xajax.call("#services\\vendas\\#salvarVenda", arguments, 1);}
+function xajax_cancelarVenda(){return xajax.call("#services\\vendas\\#cancelarVenda", arguments, 1);}
+function xajax_inicializar(){return xajax.call("#services\\vendas\\#inicializar", arguments, 1);}
+function xajax_listarVendas(){return xajax.call("#services\\vendas\\#listarVendas", arguments, 1);}
+function xajax_paginarVendas(){return xajax.call("#services\\vendas\\#paginarVendas", arguments, 1);}
+function xajax_addDetailItem(){return xajax.call("#services\\vendas\\#addDetailItem", arguments, 1);}
+function xajax_removeDetailItem(){return xajax.call("#services\\vendas\\#removeDetailItem", arguments, 1);}
+function xajax_totalVenda(){return xajax.call("#services\\vendas\\#totalVenda", arguments, 1);}
+function xajax_buscarValor(){return xajax.call("#services\\vendas\\#buscarValor", arguments, 1);}
+function xajax_estornarEstoque(){return xajax.call("#services\\vendas\\#estornarEstoque", arguments, 1);}
+function xajax_imprimir(){return xajax.call("#services\\vendas\\#imprimir", arguments, 1);}
+function xajax_imprimirCamposEspecificos(){return xajax.call("#services\\vendas\\#imprimirCamposEspecificos", arguments, 1);}
+function xajax_montarSelectAcoes(){return xajax.call("#services\\vendas\\#montarSelectAcoes", arguments, 1);}
+function xajax_efetuarAcao(){return xajax.call("#services\\vendas\\#efetuarAcao", arguments, 1);}
+function xajax_gerarNota(){return xajax.call("#services\\vendas\\#gerarNota", arguments, 1);}
+function xajax_gerarNotaServico(){return xajax.call("#services\\vendas\\#gerarNotaServico", arguments, 1);}
+function xajax_excluirLancamentosContasTela(){return xajax.call("#services\\vendas\\#excluirLancamentosContasTela", arguments, 1);}
+function xajax_excluirLancamentoEstoque(){return xajax.call("#services\\vendas\\#excluirLancamentoEstoque", arguments, 1);}
+function xajax_lancarContasVendaTela(){return xajax.call("#services\\vendas\\#lancarContasVendaTela", arguments, 1);}
+function xajax_lancarEstoques(){return xajax.call("#services\\vendas\\#lancarEstoques", arguments, 1);}
+function xajax_imprimirVenda(){return xajax.call("#services\\vendas\\#imprimirVenda", arguments, 1);}
+function xajax_imprimirVendaDetalhada(){return xajax.call("#services\\vendas\\#imprimirVendaDetalhada", arguments, 1);}
+function xajax_imprimirOrdemDeProducao(){return xajax.call("#services\\vendas\\#imprimirOrdemDeProducao", arguments, 1);}
+function xajax_obterVendaPorOrcamento(){return xajax.call("#services\\vendas\\#obterVendaPorOrcamento", arguments, 1);}
+function xajax_buscarDadosContato(){return xajax.call("#services\\vendas\\#buscarDadosContato", arguments, 1);}
+function xajax_listarFormas(){return xajax.call("#services\\vendas\\#listarFormas", arguments, 1);}
+function xajax_alterarSituacao(){return xajax.call("#services\\vendas\\#alterarSituacao", arguments, 1);}
+function xajax_getProximoNumeroPedido(){return xajax.call("#services\\vendas\\#getProximoNumeroPedido", arguments, 1);}
+function xajax_obterParametrosVendas(){return xajax.call("#services\\vendas\\#obterParametrosVendas", arguments, 1);}
+function xajax_buscarDadosContatoVendaRapida(){return xajax.call("#services\\vendas\\#buscarDadosContatoVendaRapida", arguments, 1);}
+function xajax_carregarDadosComissaoVendedor(){return xajax.call("#services\\vendas\\#carregarDadosComissaoVendedor", arguments, 1);}
+function xajax_obterPedidoVendaXML(){return xajax.call("#services\\vendas\\#obterPedidoVendaXML", arguments, 1);}
+function xajax_setarPrimeiraCompra(){return xajax.call("#services\\vendas\\#setarPrimeiraCompra", arguments, 1);}
+function xajax_buscarDadosEstoqueProduto(){return xajax.call("buscarDadosEstoqueProduto", arguments, 1);}
+function xajax_buscarInfoEstoqueProdutos(){return xajax.call("buscarInfoEstoqueProdutos", arguments, 1);}
+function xajax_obterPedidoVendaArquivoCRNET(){return xajax.call("#services\\vendas\\#obterPedidoVendaArquivoCRNET", arguments, 1);}
+function xajax_gerarCarne(){return xajax.call("#services\\vendas\\#gerarCarne", arguments, 1);}
+function xajax_salvarVendaRapida(){return xajax.call("#services\\vendas\\#salvarVendaRapida", arguments, 1);}
+function xajax_obterContatoPadrao(){return xajax.call("#services\\vendas\\#obterContatoPadrao", arguments, 1);}
+function xajax_buscarValorComCodigoEAN(){return xajax.call("#services\\vendas\\#buscarValorComCodigoEAN", arguments, 1);}
+function xajax_obterEstruturaDoProduto(){return xajax.call("#services\\vendas\\#obterEstruturaDoProduto", arguments, 1);}
+function xajax_obterListaDeTagsParaOsComponentesApartirDoJs(){return xajax.call("#services\\vendas\\#obterListaDeTagsParaOsComponentesApartirDoJs", arguments, 1);}
+function xajax_verificaConfiguracaoDaContaPadrao(){return xajax.call("verificaConfiguracaoDaContaPadrao", arguments, 1);}
+function xajax_verificaLancarEstoque(){return xajax.call("#services\\vendas\\#verificaLancarEstoque", arguments, 1);}
+function xajax_obterOpcoesDepositos(){return xajax.call("obterOpcoesDepositos", arguments, 1);}
+function xajax_listarOcorrenciasDaVenda(){return xajax.call("#services\\vendas\\#listarOcorrenciasDaVenda", arguments, 1);}
+function xajax_adicionarOcorrenciaVenda(){return xajax.call("#services\\vendas\\#adicionarOcorrenciaVenda", arguments, 1);}
+function xajax_removeDetailOcorrencia(){return xajax.call("#services\\vendas\\#removeDetailOcorrencia", arguments, 1);}
+function xajax_faturarVariosPedidos(){return xajax.call("#services\\vendas\\#faturarVariosPedidos", arguments, 1);}
+function xajax_obterProximoNumeroPedido(){return xajax.call("#services\\vendas\\#obterProximoNumeroPedido", arguments, 1);}
+function xajax_salvarInfGeradasPDV(){return xajax.call("#services\\vendas\\#salvarInfGeradasPDV", arguments, 1);}
+function xajax_geraTxtIntegracao(){return xajax.call("#services\\vendas\\#geraTxtIntegracao", arguments, 1);}
+function xajax_validarLimiteDescontoVendedor(){return xajax.call("#services\\vendas\\#validarLimiteDescontoVendedor", arguments, 1);}
+function xajax_validarLimiteDescontoGeralVendedor(){return xajax.call("#services\\vendas\\#validarLimiteDescontoGeralVendedor", arguments, 1);}
+function xajax_imprimirVendaBalcao(){return xajax.call("#services\\vendas\\#imprimirVendaBalcao", arguments, 1);}
+function xajax_exportarContatosSIGEPWeb(){return xajax.call("#services\\vendas\\#exportarContatosSIGEPWeb", arguments, 1);}
+function xajax_buscarUnidade(){return xajax.call("#services\\vendas\\#buscarUnidade", arguments, 1);}
+function xajax_iniciarExportarEnderecosPlanilha(){return xajax.call("#services\\vendas\\#iniciarExportarEnderecosPlanilha", arguments, 1);}
+function xajax_exportarEnderecosPlanilha(){return xajax.call("#services\\vendas\\#exportarEnderecosPlanilha", arguments, 1);}
+function xajax_obterEstoqueProdutos(){return xajax.call("obterEstoqueProdutos", arguments, 1);}
+function xajax_buscarDadosProduto(){return xajax.call("#services\\vendas\\#buscarDadosProduto", arguments, 1);}
+function xajax_buscarDadoEspecificoProduto(){return xajax.call("#services\\vendas\\#buscarDadoEspecificoProduto", arguments, 1);}
+function xajax_gerarOrdemServico(){return xajax.call("#services\\vendas\\#gerarOrdemServico", arguments, 1);}
+function xajax_mudarSituacaoVendasSelecionadas(){return xajax.call("#services\\vendas\\#mudarSituacaoVendasSelecionadas", arguments, 1);}
+function xajax_fecharPopupOcorrencias(){return xajax.call("#services\\vendas\\#fecharPopupOcorrencias", arguments, 1);}
+function xajax_carregarLojasIntegradas(){return xajax.call("carregarLojasIntegradas", arguments, 1);}
+function xajax_alterarSituacaoVenda(){return xajax.call("#services\\vendas\\#alterarSituacaoVenda", arguments, 1);}
+function xajax_carregarFiltroLojas(){return xajax.call("#services\\vendas\\#carregarFiltroLojas", arguments, 1);}
+function xajax_obterDepositosDeEstoque(){return xajax.call("#services\\vendas\\#obterDepositosDeEstoque", arguments, 1);}
+function xajax_imprimirComprovanteNaoFiscal(){return xajax.call("#services\\vendas\\#imprimirComprovanteNaoFiscal", arguments, 1);}
+function xajax_getConfiguracoesFatura(){return xajax.call("#services\\vendas\\#getConfiguracoesFatura", arguments, 1);}
+function xajax_gerarBoletoFatura(){return xajax.call("#services\\vendas\\#gerarBoletoFatura", arguments, 1);}
+function xajax_calcularImpostosVenda(){return xajax.call("#services\\vendas\\#calcularImpostosVenda", arguments, 1);}
+function xajax_verificarPassoEncerramento(){return xajax.call("#services\\vendas\\#verificarPassoEncerramento", arguments, 1);}
+function xajax_salvarOpcoesFatura(){return xajax.call("#services\\vendas\\#salvarOpcoesFatura", arguments, 1);}
+function xajax_validarFaturaNfse(){return xajax.call("#services\\vendas\\#validarFaturaNfse", arguments, 1);}
+function xajax_validarFaturaBoleto(){return xajax.call("#services\\vendas\\#validarFaturaBoleto", arguments, 1);}
+function xajax_carregarSituacoes(){return xajax.call("carregarSituacoes", arguments, 1);}
+function xajax_carregarTransicoes(){return xajax.call("#services\\vendas\\#carregarTransicoes", arguments, 1);}
+function xajax_obterDisponibilidadeCertificado(){return xajax.call("#services\\vendas\\#obterDisponibilidadeCertificado", arguments, 1);}
+function xajax_gerarDocumentoCompartilhado(){return xajax.call("gerarDocumentoCompartilhado", arguments, 1);}
+function xajax_obterListaParaExportacao(){return xajax.call("#services\\vendas\\#obterListaParaExportacao", arguments, 1);}
+function xajax_buscaStatusLoja(){return xajax.call("#services\\vendas\\#buscaStatusLoja", arguments, 1);}
+function xajax_obterPedidoPrestashop(){return xajax.call("#services\\vendas\\#obterPedidoPrestashop", arguments, 1);}
+function xajax_obterPedidoMagento(){return xajax.call("obterPedidoMagento", arguments, 1);}
+function xajax_enviarCodigoRastreamento(){return xajax.call("enviarCodigoRastreamento", arguments, 1);}
+function xajax_obterPedidoMercadoLivre(){return xajax.call("obterPedidoMercadoLivre", arguments, 1);}
+function xajax_obterPedidoMercadoShops(){return xajax.call("obterPedidoMercadoShops", arguments, 1);}
+function xajax_obterPedidoiShopping(){return xajax.call("obterPedidoiShopping", arguments, 1);}
+function xajax_obterPedidoInterspire(){return xajax.call("obterPedidoInterspire", arguments, 1);}
+function xajax_getOrderInterspire(){return xajax.call("getOrderInterspire", arguments, 1);}
+function xajax_getOrderJet(){return xajax.call("getOrderJet", arguments, 1);}
+function xajax_obterPedidoLojaIntegrada(){return xajax.call("obterPedidoLojaIntegrada", arguments, 1);}
+function xajax_obterPedidoMarketplaceExtra(){return xajax.call("obterPedidoMarketplaceExtra", arguments, 1);}
+function xajax_obterPedido(){return xajax.call("obterPedido", arguments, 1);}
+function xajax_gerarNotasFiscaisSelecionadas(){return xajax.call("#services\\vendas\\#gerarNotasFiscaisSelecionadas", arguments, 1);}
+function xajax_importarPedidoKanui(){return xajax.call("importarPedidoKanui", arguments, 1);}
+function xajax_listStoreActiveFastcommerce(){return xajax.call("listStoreActiveFastcommerce", arguments, 1);}
+function xajax_obterPedidoNuvemshop(){return xajax.call("obterPedidoNuvemshop", arguments, 1);}
+function xajax_importarPedidosGroupon(){return xajax.call("importarPedidosGroupon", arguments, 1);}
+function xajax_importarPedidosShopDelivery(){return xajax.call("importarPedidosShopDelivery", arguments, 1);}
+function xajax_importarPedidosUolShopping(){return xajax.call("importarPedidosUolShopping", arguments, 1);}
+function xajax_obterTodasLojasVirtuaisAtivas(){return xajax.call("obterTodasLojasVirtuaisAtivas", arguments, 1);}
+function xajax_exportarStatusLoja(){return xajax.call("#services\\vendas\\#exportarStatusLoja", arguments, 1);}
+function xajax_importOrderByForm(){return xajax.call("#services\\vendas\\#importOrderByForm", arguments, 1);}
+function xajax_listarLojasVirtuaisAtivas(){return xajax.call("listarLojasVirtuaisAtivas", arguments, 1);}
+function xajax_obterListaTodasLojasVirtuaisAtivas(){return xajax.call("obterListaTodasLojasVirtuaisAtivas", arguments, 1);}
+function xajax_listarTodasLojasVirtuaisAtivas(){return xajax.call("listarTodasLojasVirtuaisAtivas", arguments, 1);}
+function xajax_enviarDadosLojaVirtual(){return xajax.call("enviarDadosLojaVirtual", arguments, 1);}
+function xajax_obterVendaPorNumeroMesa(){return xajax.call("obterVendaPorNumeroMesa", arguments, 1);}
+function xajax_obterVendaPorNumeroPedido(){return xajax.call("obterVendaPorNumeroPedido", arguments, 1);}
+function xajax_gerarNFCe(){return xajax.call("gerarNFCe", arguments, 1);}
+function xajax_gerarTxtIntegracao(){return xajax.call("gerarTxtIntegracao", arguments, 1);}
+function xajax_alterarReciboImpresso(){return xajax.call("alterarReciboImpresso", arguments, 1);}
+function xajax_carregarVendedor(){return xajax.call("carregarVendedor", arguments, 1);}
+function xajax_verificarControleCaixaParaLoja(){return xajax.call("verificarControleCaixaParaLoja", arguments, 1);}
+function xajax_selectLojasInicial(){return xajax.call("selectLojasInicial", arguments, 1);}
+function xajax_alterarLojaSelecionada(){return xajax.call("alterarLojaSelecionada", arguments, 1);}
+function xajax_getFormasPagamento(){return xajax.call("getFormasPagamento", arguments, 1);}
+function xajax_incluirControleCaixa(){return xajax.call("incluirControleCaixa", arguments, 1);}
+function xajax_salvarControleCaixa(){return xajax.call("salvarControleCaixa", arguments, 1);}
+function xajax_obterControleCaixaControleMesas(){return xajax.call("obterControleCaixaControleMesas", arguments, 1);}
+function xajax_salvarSangria(){return xajax.call("salvarSangria", arguments, 1);}
+function xajax_obterMesasAbertasPopup(){return xajax.call("obterMesasAbertasPopup", arguments, 1);}
+function xajax_getSenhaCartao(){return xajax.call("getSenhaCartao", arguments, 1);}
+function xajax_enviarAssinado(){return xajax.call("enviarAssinado", arguments, 1);}
+function xajax_enviarNFCeTela(){return xajax.call("enviarNFCeTela", arguments, 1);}
+function xajax_imprimirRotulo(){return xajax.call("imprimirRotulo", arguments, 1);}
+function xajax_imprimirRotuloExterno(){return xajax.call("imprimirRotuloExterno", arguments, 1);}
+function xajax_salvarItemVenda(){return xajax.call("salvarItemVenda", arguments, 1);}
+function xajax_calcularTotalMesas(){return xajax.call("calcularTotalMesas", arguments, 1);}
+function xajax_selecionarLojaMesas(){return xajax.call("selecionarLojaMesas", arguments, 1);}
+function xajax_alterarNroPessoasVenda(){return xajax.call("alterarNroPessoasVenda", arguments, 1);}
+function xajax_obterSangriasSuprimentos(){return xajax.call("obterSangriasSuprimentos", arguments, 1);}
+function xajax_excluirSangria(){return xajax.call("excluirSangria", arguments, 1);}
+function xajax_carregarLojasIntegradasCaixa(){return xajax.call("carregarLojasIntegradasCaixa", arguments, 1);}
+function xajax_obterServicosLogistica(){return xajax.call("obterServicosLogistica", arguments, 1);}
+function xajax_listarUnidadesDeNegocio(){return xajax.call("listarUnidadesDeNegocio", arguments, 1);}
+function xajax_obterDadosRastroObjeto(){return xajax.call("obterDadosRastroObjeto", arguments, 1);}
+function xajax_sincronizarRastroObjeto(){return xajax.call("sincronizarRastroObjeto", arguments, 1);}
+function xajax_enviarEmailAcompanhamentoRastro(){return xajax.call("enviarEmailAcompanhamentoRastro", arguments, 1);}
+function xajax_validarDisponibilidadeServicoTela(){return xajax.call("validarDisponibilidadeServicoTela", arguments, 1);}
+function xajax_enviarEmailRastreioCliente(){return xajax.call("enviarEmailRastreioCliente", arguments, 1);}
+function xajax_obterRastreamentosOrigem(){return xajax.call("obterRastreamentosOrigem", arguments, 1);}
+function xajax_obterRequisitosCotacoes(){return xajax.call("obterRequisitosCotacoes", arguments, 1);}
+function xajax_consultarCotacoes(){return xajax.call("consultarCotacoes", arguments, 1);}
+function xajax_consultarPontosRetirada(){return xajax.call("consultarPontosRetirada", arguments, 1);}
+function xajax_obterEmbalagens(){return xajax.call("obterEmbalagens", arguments, 1);}
+function xajax_obterEmbalagem(){return xajax.call("obterEmbalagem", arguments, 1);}
+function xajax_obterListaContatos(){return xajax.call("obterListaContatos", arguments, 1);}
+function xajax_enviarFaturas(){return xajax.call("#services\\vendas\\#enviarFaturas", arguments, 1);}
+function xajax_iniciarEnvioFaturas(){return xajax.call("#services\\vendas\\#iniciarEnvioFaturas", arguments, 1);}
+function xajax_obterUrlArquivoSat(){return xajax.call("obterUrlArquivoSat", arguments, 1);}
+function xajax_montarEtiquetasVenda(){return xajax.call("#services\\vendas\\#montarEtiquetasVenda", arguments, 1);}
+function xajax_enviarDocumentoWhatsapp(){return xajax.call("enviarDocumentoWhatsapp", arguments, 1);}
+function xajax_obterDadosContatoMensagemMercadoLivre(){return xajax.call("#services\\vendas\\#obterDadosContatoMensagemMercadoLivre", arguments, 1);}
+function xajax_enviaMensagemMercadoLivre(){return xajax.call("#services\\vendas\\#enviaMensagemMercadoLivre", arguments, 1);}
+function xajax_obterDadosDoDestinatario(){return xajax.call("obterDadosDoDestinatario", arguments, 1);}
+function xajax_compartilharDocumento(){return xajax.call("compartilharDocumento", arguments, 1);}
+function xajax_geraAnexosProposta(){return xajax.call("geraAnexosProposta", arguments, 1);}
+function xajax_obterLinkCompartilhado(){return xajax.call("obterLinkCompartilhado", arguments, 1);}
+function xajax_autoCompletarProduto(){return xajax.call("autoCompletarProduto", arguments, 1);}
+function xajax_pesquisarProdutos(){return xajax.call("pesquisarProdutos", arguments, 1);}
+function xajax_salvarProdutoRapido(){return xajax.call("salvarProdutoRapido", arguments, 1);}
+function xajax_consultarHistoricoProdutoCliente(){return xajax.call("consultarHistoricoProdutoCliente", arguments, 1);}
+function xajax_procurarNoHistoricoPorEsteProduto(){return xajax.call("procurarNoHistoricoPorEsteProduto", arguments, 1);}
+function xajax_autoCompletarContato(){return xajax.call("autoCompletarContato", arguments, 1);}
+function xajax_pesquisarContatos(){return xajax.call("pesquisarContatos", arguments, 1);}
+function xajax_consultarHistoricoVendasDoCliente(){return xajax.call("consultarHistoricoVendasDoCliente", arguments, 1);}
+function xajax_consultarHistoricoFinanceiroDoCliente(){return xajax.call("consultarHistoricoFinanceiroDoCliente", arguments, 1);}
+function xajax_buscarAutoCompletarContato(){return xajax.call("buscarAutoCompletarContato", arguments, 1);}
+function xajax_obterTiposContatos(){return xajax.call("obterTiposContatos", arguments, 1);}
+function xajax_validaCPFeCNPJ(){return xajax.call("validaCPFeCNPJ", arguments, 1);}
+function xajax_buscarDadosContatoRapido(){return xajax.call("buscarDadosContatoRapido", arguments, 1);}
+function xajax_salvarContatoRapido(){return xajax.call("salvarContatoRapido", arguments, 1);}
+function xajax_buscarPessoasContato(){return xajax.call("buscarPessoasContato", arguments, 1);}
+function xajax_gerarArquivoCupom(){return xajax.call("gerarArquivoCupom", arguments, 1);}
+function xajax_obterConfiguracoesCupomFiscal(){return xajax.call("obterConfiguracoesCupomFiscal", arguments, 1);}
+function xajax_gravarCupom(){return xajax.call("gravarCupom", arguments, 1);}
+function xajax_cancelarUltimoCupomEmitido(){return xajax.call("cancelarUltimoCupomEmitido", arguments, 1);}
+function xajax_gerarEtiquetas(){return xajax.call("gerarEtiquetas", arguments, 1);}
+</script>
+<script type="text/javascript" src="https://www.bling.com.br/libs/xajax-1556051119.js"></script>
+<script type="text/javascript">
+window.setTimeout(function () { if (!xajaxLoaded) { alert('Error: the xajax Javascript file could not be included. Perhaps the URL is incorrect?\nURL: https://www.bling.com.br/libs/xajax-1556051119.js'); } }, 6000);
+</script>
+
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-33625932-7', 'auto');
+	ga('send', 'pageview', {
+		page: '/Vendas',
+		title: 'About Us'
+	});
+</script>
+
+</head>
+<body>
+
+<div id="header-container">
+<div id="header-content">
+<script type="text/javascript">
+window.setInterval("atualizarInfo()", 300000);function atualizarInfo(){
+	time = new Date();
+	$.get("services/auth.services.php", {"a": "ping", "time": time.getTime()},
+    function(r){
+      	time = new Date();
+      	intervalo = time.getTime() - r;
+    } );
+}
+</script></div>
+</div>
+
+
+<div id="menu-container"> <div id="menu-content"> <div class="jd-container"><ul id="menu_novo"><li class="home"><a href="https://www.bling.com.br/index.php">Home</a></li><li><a>Cadastros<i class="fas fa-caret-down"></i></a><ul><li><a href='https://www.bling.com.br/contatos.php#list'>Clientes e Fornecedores</a></li><li><a href='https://www.bling.com.br/produtos.php#list'>Produtos</a></li><li><a href='https://www.bling.com.br/vendedores.php#list'>Vendedores</a></li><li><a href='https://www.bling.com.br/relatorios.php?id=1&amp;nome=Cadastros'>Relatórios</a></li></ul></li><li><a>Suprimentos<i class="fas fa-caret-down"></i></a><ul><li><a href='https://www.bling.com.br/estoque.php'>Controle de Estoques</a></li><li><a href='https://www.bling.com.br/pedidos.compra.php#list'>Pedidos de Compra</a></li><li><a href='https://www.bling.com.br/notas.entrada.php#list'>Nota de Entrada</a></li><li><a href='https://www.bling.com.br/relatorios.php?id=2&amp;nome=Suprimentos'>Relatórios</a></li></ul></li><li><a>Vendas<i class="fas fa-caret-down"></i></a><ul><li><a href='https://www.bling.com.br/pdv.php'>Frente de Caixa</a></li><li><a href='https://www.bling.com.br/gnres.php'>GNRE</a></li><li><a href='https://www.bling.com.br/integracoes.logisticas.php'>Integrações Logísticas</a></li><li><a href='https://www.bling.com.br/nfces.php'>NFC-e</a></li><li><a href='https://www.bling.com.br/orcamentos.php#list'>Propostas Comerciais</a></li><li><a href='https://www.bling.com.br/vendas.php#list'>Pedidos de Venda</a></li><li><a href='https://www.bling.com.br/notas.fiscais.php#list'>Notas Fiscais</a></li><li><a href='https://www.bling.com.br/comissoes.php#list'>Comissões</a></li><li><a href='https://www.bling.com.br/vendas.lojas.virtuais.php'>Pedidos de venda multilojas</a></li><li><a href='https://www.bling.com.br/relatorios.php?id=3&amp;nome=Vendas'>Relatórios</a></li></ul></li></ul></div><div class="top-jd"><div id="notificationMenu" class="display-none"><span class="arrow-up-behind hidden-mobile"></span><span class="arrow-up-front hidden-mobile"></span><div class="notification-box"><div class="notification-title-box-content notification-title"><span>Notificações</span><a href="central.notificacoes.php" class="ico-none fas fa-cog" title="Configurar notificações"></a></div><div class="notification-list-long-box"><div id="no-notification-box"><div class="no-notification">No momento não temos notificações!</div><div class="sr-bling"></div><div class="nuvem"></div></div><ul id="n_list_unread"></ul></div><div class="notification-box-content notification-title" id="notification-history-title"><span>Histórico de Notificações</span><i class="ico-none fas fa-caret-right"></i></div><div class="notification-list-short-box" style="display: none;"><ul id="n_list_history"></ul></div></div></div><div class="float_right"><ul id="menu_acoes"><li id="bell_box" class="hidden-mobile"><div id="bell_content"><i id="ico_notification" class="fas fa-bell fa-lg"></i><span class="display-none"></span></div></li><li id="accountMenu" class="hidden-mobile" title="Ver informações da conta"><div class="account_content"><a class="myAccount" href="#" data-placement="bottom" data-id="popover-account"
+		data-toggle="popover" data-trigger="manual" data-html="true" data-container="#menu-container" data-user="Gabriel" data-title="RISLANDIA DE PAULA SIQUEIRA SILV..." data-admin=""><i class="icon icon-user icon-large"></i><span class="menu-username hidden-mobile">Gabriel</span></a></div></li><li><a href="preferencias.php">Preferências</a></li><li><a href="http://manuais.bling.com.br" target="_blank">Manuais</a></li><li><a href="tickets.php#list">Suporte</a></li><li><a title="Sair" href="logout.php"><i class="fas fa-sign-out-alt fa-lg"></i></a></li></ul></div></div></div></div></div><div id="top-container">
+<input type="hidden" id="sessid" value="iafoig218cv1fuko7lbkr2e9er" />
+<script type="text/javascript">
+    function hideMsg(parentMsg, tipoAviso) {
+        $(parentMsg).closest('div.footer-message').remove();
+        if ($('.footer-message').length == 0) {
+            $('#base, #datatable-area').removeAttr('style');
+        }
+        if (tipoAviso != undefined) {
+            $.post("./templates/ocultar.mensagem.sistema.php?msg="+tipoAviso);
+        } else {
+            $.setCookie('avisoVisualizado', parseInt(Date.now() / 1000), 30);
+        }
+    }
+</script>
+<div class="aviso" id='error-messages'></div>
+</div>
+<div id="main-container">
+
+<script src="libs/defiant.min.js" type="text/javascript"></script><script src="libs/fileuploader.js"></script><link rel="stylesheet" type="text/css" href="styles/fileuploader.css"><script type="text/javascript" src="libs/jquery.print.js"></script><script type="text/javascript" src="templates/form.sat.operacoes.js"></script><iframe id="framePrint" width="0" height="0" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+<div id="container">
+<script src="templates/form.consulta.cadastro.js"></script><link rel="stylesheet" href="https://www.bling.com.br/libs/hopscotch/hopscotch.min.css"><div id="edicao" class="invisivel">
+
+	<div id="slot_popup" class="invisivel">
+		<form style="text-align: left;" id="form_edicao_estrutura" name="form_edicao_estrutura" onsubmit="return false">
+	<input type="hidden" name="edQuantidadeDoProduto" id="edQuantidadeDoProduto" value=""><input type="hidden" name="edIdProduto" id="edIdProduto"><input type="hidden" name="itemNumberEstrutura" id="itemNumberEstrutura" value="-1"><div style="display: none;" id="td_categoria_componente"></div>
+
+	<table id="gritens_estrutura" class="grid-header"><tr id="itens_header_estrutura"><th style="width: 39%;">Componente</th>
+			<th style="width: 20%;">Qtde Un</th>
+			<th style="width: 20%;">Estoque</th>
+			<th style="width: 20%;">Qtde Total</th>
+			<th style="width: 1%;"></th>
+		</tr><tr id="itens_estrutura"><td>
+				<input type="hidden" id="produtoEstruturaId" name="produtoEstruturaId"><input class="editgrid tipsyOff input_text ui-autocomplete-input" id="produtoEstrutura" name="produtoEstrutura" type="text" maxlength="100" onkeypress="clearHidenResult(event,$('#produtoEstruturaId'));"></td>
+			<td>
+				<input class="editgrid tipsyOff input_text ui-autocomplete-input edt-valor" type="text" id="quantidadeEstrutura" name="quantidadeEstrutura" value="" onblur="recalcularQtdeTotalItem($('#quantidadeEstrutura').val(), 'quantidadeEstruturaTotal');"></td>
+			<td>
+				<input class="editgrid tipsyOff input_text ui-autocomplete-input" readonly type="text" id="estoqueEstrutura" value=""></td>
+			<td>
+				<input class="editgrid tipsyOff input_text ui-autocomplete-input edt-valor" readonly type="text" id="quantidadeEstruturaTotal" value=""></td>
+			<td style="width: 1%;" class="item">
+				<a class="tableIcon" title="Remover componente" onclick="cancelarInclusaoComponente();">
+					<i class="icon-trash"></i>
+				</a>
+			</td>
+		</tr></table><a href="#" id="aNovaLinhaItemEstrutura" style="float: right;" onclick="adicionarLinhaEstruturaItem(); return false;">Adicionar outro componente</a>
+</form>
+<form style="text-align: left; width: 670px; height:370px;" id="form_historico_vendas" name="form_historico_vendas" onsubmit="return false">
+	<input type="hidden" id="idContatoBuscaHistorico" name="idContatoBuscaHistorico" value=""><input type="hidden" id="tipoBuscaHistorico" name="tipoBuscaHistorico" value=""><div id="tab-area">
+		<ul id="tabnav"><li><a href="#" id="link_hist_produtos" class="active" onclick="mostrarAbaHistProdutos(); return false;">Produtos</a></li>
+			<li style="display: none;"><a href="#" id="link_hist_financeiro" onclick="mostrarAbaHistFinanceiro(); return false;">Financeiro</a></li>
+		</ul></div>
+	<div>
+		<div id="dadosComprasCliente">
+			<span class="linha_form wh100">
+				<p class="titulo_input">Outros produtos</p>
+				<span class="inf" title="Digite parte do nome e pressione ENTER para busca avançada.">i</span>
+				<input name="descricaoProdutoBuscaHistorico" id="descricaoProdutoBuscaHistorico" type="text" size="45" class="input_text tipsyOff" onkeydown="clearHidenResult(event,$('#idProduto'));"><input type="hidden" id="idProduto" name="idProduto" value="0"><span class="input_icones">
+					<a title="Pesquisar" class="formIcon" id="btBuscarHistoricoVendasProdutoCliente" onclick="buscarNoHistorico()"><i class="icon-search"></i></a>
+				</span>
+			</span>
+			<span class="linha_form wh100" style="overflow-y:scroll;max-height:200px;">
+				<div id="listagem_vendas_cliente"></div>
+			</span>
+			<p class="info">* São exibidos todos os registros para este cliente.</p>
+		</div>
+		<div class="invisivel" id="listagem_historico_financeiro_cliente" style="overflow-y:scroll;max-height:200px; display:inline-block;"></div>
+	</div>
+</form><form style="text-align: left; width: 420px; height:315px;" id="form_historico_produto_cliente" name="form_historico_produto_cliente" onsubmit="return false">
+	<div id="listagem_historico_cliente_produto"></div>
+	<p class="info">* São exibidos apenas os 10 últimos registros.</p>
+</form>
+<script type="text/javascript">
+	function visualizarAsInformacoesProdutoCliente(idProduto, tipoConsulta) {
+	tipoConsulta = tipoConsulta || "S";
+	if (idProduto > 0 && ($("#contato").val() || $("#nomeContato").val()).trim() != "") {
+		idItemTempProdutoCliente = idProduto;
+		displayWait("pleasewait", true, "Carregando informações, aguarde...");
+		xajax_consultarHistoricoProdutoCliente(idItemTempProdutoCliente, tipoConsulta, $("#idContato").val(), function(data){
+			var html = "";
+			if(data.length > 0){
+				html = "<table class='grid' style='width:100%'><h2>" + data[0].descricao +"";
+				html += "<tr>" +
+					"<th style='width:20%; padding:2pt;'>Valor Unitário" +
+					"<th style='width:17%; padding:2pt;'>Quantidade" +
+					"<th style='width:17%; padding:2pt;'>Data" +
+					"<th style='width:16%; padding:2pt;'>Tipo" +
+					"<th style='width:11%; padding:2pt;'>Número" +
+					"";
+				$.each(data, function(i, item) {
+					html += "<tr>" +
+					"<td style='padding:2pt;text-align:left;'>" + item.valorUnitario + "" +
+					"<td style='padding:2pt;text-align:left;'>" + item.qtde + "" +
+					"<td style='padding:2pt; text-align:left;'>" + item.data + "" +
+					"<td style='padding:2pt;'>" + item.origem + "" +
+					"<td style='padding:2pt;'>" + item.numero + "";
+				});
+				html += "";
+			}else{
+				html = "<i style='color: #7CB5D8; font-size: 12pt; padding-right: 5px;' class='icon-info-sign'><span style='font-size: 11pt; margin-left: 5px; color: gray;'>Não existem" + (tipoConsulta === "S" ? " vendas " : " compras ") + "deste item para este cliente.";
+			}
+			$("#listagem_historico_cliente_produto").html(html);
+			var dialog = {
+				config: {
+					title: tipoConsulta === "S" ? 'Últimas vendas deste item para este cliente' : "Últimas compras",
+					width: 640
+				},
+				content: $("#form_historico_produto_cliente"),
+				textOk: "",
+				hideCancel: true,
+				hideOk: true
+			};
+			createDialog(dialog, 1);
+			closeWait("pleasewait");
+		});
+	}
+}
+</script><div id="popup-progress" class="display_none">
+	<div class="info">
+		<p class="caption">Para iniciar o envio, clique em "Iniciar".</p>
+	</div>
+	<div id="status-envio" style="display: none">
+		<div class="progress" style="background-color: #f5f5f5; height: 20px;">
+			<div class="progressbar" style="background-color: #3faf6c; width: 1%; height: 100%;"></div>
+		</div>
+		<div id="progress-text" class="text_right">Enviando <span class="progress-text-reg">0</span>/<span class="progress-text-total"></span></div>
+	</div>
+</div>	</div>
+
+	<div id="content" class="box-content">
+
+		<div class="titulo-det titulo">Venda</div>
+
+		<div id="base">
+
+			<!--  Modal da Exception-->
+			<div style="display:none;">
+				<div id="modalException">
+					<span id="modalExceptionMsg"></span>
+				</div>
+			</div>
+
+			<div id="pleasewait" class="pleasewait"></div>
+
+			<form id="vendaForm" name="vendaForm" action="" onsubmit="return false" data-system-action="VendasRegistroIE">
+				<input type="hidden" id="itemNumber" value="-1" name="itemNumber"><input type="hidden" id="id" name="id"><input type="hidden" id="gera_nfse" name="gera_nfse" value="0"><input type="hidden" id="subtotal" name="subtotal" value="0"><input type="hidden" id="tipoIntegracao" name="tipoIntegracao" value=""><input type="hidden" id="total" name="total" value="0"><input type="hidden" id="primeiraCompra" name="primeiraCompra" onchange="setarPrimeiraCompra()" value=""><input type="hidden" id="possuiAcessoAosComponentes" name="possuiAcessoAosComponentes" value="S"><input type="hidden" id="permite_venda_de_produtos_nao_cadastrados" value="S"><input type="hidden" id="idMagento" name="idMagento"><input type="hidden" id="parametroEditarNumeroPedido" name="parametroEditarNumeroPedido" value="N"><input type="hidden" id="idOrigem" name="idOrigem" value="0"><input type="hidden" id="vendasPesoCalculado" name="vendasPesoCalculado" value="N"><input type="hidden" id="integracaoLojaVirtual" name="integracaoLojaVirtual" value="1"><input type="hidden" id="utilizaTransportadora" name="utilizaTransportadora" value="S"><input type="hidden" id="utilizaModuloVendedor" name="utilizaModuloVendedor" value="1"><input type="hidden" id="utilizaIntegracaoLogistica" name="utilizaIntegracaoLogistica" value="1"><input type="hidden" id="nfe_versao" name="nfe_versao" value="4.00"><div style="display: none;" class="warn" id="avisoMensagem">
+					<h1>Atenção</h1>
+					<h3 id="tituloAvisos"></h3>
+					<div style="color: red;" id="avisos">
+					</div>
+					<a href="#" onclick="mostraOcultaAvisosVenda();"><span id="ocultaMostraAvisos">Ocultar</span></a>
+				</div>
+								<div class="invisivel" id="aviso-descontinuacao">
+					A importação direta será descontinuada nas próximas versões do sistema, para substituí-lo utilize a <a href="configuracoes.integracoes.lojas.virtuais.php" style="font-weight: bold;">Configuração de MultiLojas</a><br>
+					Para maiores informações, acesse o <a id="link" href="https://manuais.bling.com.br/manual/?categoria=integra%C3%A7%C3%B5es&tipo=api" target="_blank">Manual de integrações</a><br>
+					Qualquer dúvida entre em contato com nosso <a href="tickets.php">Suporte</a>
+				</div>
+				<h3 class="subtitulo">Dados da venda</h3>
+
+				<div class="linha_form wh40 margin_right">
+					<label class="titulo_input">Cliente<span class="obrigatorio"> </span></label>
+					<span class="inf" title="Digite parte do nome e pressione ENTER para busca avançada.">i</span>
+					<input type="hidden" id="idContato" name="idContato"></div>
+				<span id="dadosVendedor" class="linha_form wh23 margin_right">
+					<p class="titulo_input">Vendedor</p>
+					<span class="inf" title="Campo opcional">i</span>
+					<input type="hidden" name="idVendedor" id="idVendedor"><input type="text" class="input_text tipsyOff" name="nomeVendedor" id="nomeVendedor" onkeydown="clearHidenResult(event,$('#idVendedor'));"></span>
+
+				<span id="dadosLoja" class="linha_form wh18 margin_right">
+					<span class="titulo_input">Loja</span>
+					<select name="loja" id="loja" class="input_text" onchange="verificarItensVendaLoja();listarUnidadesDeNegocio($('#loja').val(), 0);"><option id="0" value="0">Todas as lojas</option><option value="203249551">A Brigadeirinha</option><option value="203324846">BORALA EQUIPAMENTOS</option></select></span>
+				<span id="confUnidadeNegocio" class="linha_form wh15">
+					<span class="titulo_input">Unid. de Negócio</span>
+					<select name="idConfUnidadeNegocio" id="idConfUnidadeNegocio" class="input_text" onchange="verificarItensVendaLoja();setarIdConfUniNeg($(this).val());"><option value="0">Nenhuma unidade</option></select></span>
+				<div class="linha_form wh100">
+					<div id="tab-area">
+						<ul id="tabnav"><li><a href="#" onclick="verComissoes('Ver Itens',$(this)); return false;" id="activeItens" class="active">Itens</a></li>
+														<li><a href="#" onclick="verComissoes('Ver Comissões', $(this)); return false;">Comissões</a></li>
+													</ul></div>
+				</div>
+
+				<table style="float:left; width:100%;"><tr><td>
+							<table id="gritens" class="grid-header tabela-numerada" summary="" style="width:100%;"><tr id="itens_header"><th width="35%">Descrição</th>
+									<th width="2%"></th>
+									<th class="item hidden-mobile" width="10%">Código</th>
+									<th class="item hidden-mobile" width="5%">Un</th>
+									<th class="item" width="8%">Qtde</th>
+									<th class="item hidden-mobile" width="10%">Preço lista</th>
+									<th class="item" width="6%">Desc %</th>
+									<th class="item" width="10%">Preço un</th>
+																		<th class="item hidden-mobile" width="10%">Preço total</th>
+									<th class="comissao" width="15%" style="display:none">Base</th>
+									<th class="comissao" width="15%" style="display:none">Adicionais da Base</th>
+									<th class="comissao" width="15%" style="display:none">Alq. %</th>
+									<th class="comissao" width="15%" style="display:none">Valor comissão</th>
+									<th style="display:none">Linha de produto</th>
+									<th width="3%"></th>
+									<th width="2%"></th>
+									<th width="2%"></th>
+									<th width="2%"></th>
+								</tr><tr id="itens"><td style="border-right-style: none;">
+										<input type="hidden" id="produtoId" name="produtoId"><input class="editgridh tipsyOff input_text" id="produto" name="produto" type="text" maxlength="120" onkeypress="completerProduct(event,'produto','setIdProduto','S'); limparCodigoProduto(event); clearHidenResult(event,$('#produtoId'))" placeholder="Digite parte do nome ou código do item"></td>
+									<td style="border-left-style: none; border-right-style: none;" class="center opcItem">
+										<a style="float: right; display: none;" title="Visualizar descrição detalhada" class="tableIcon" id="descricao_detalhada_produto" onclick="visualizarDescricaoDetalhada();">
+											<i class="icon-file"></i>
+										</a>
+									</td>
+									<td class="item hidden-mobile"><input class="input_text editgridh" type="text" id="codigo" name="codigo" value=""></td>
+									<td class="item hidden-mobile"><input placeholder="UN" class="input_text editgridh" type="text" id="un" name="un" size="1" value="" maxlength="6"></td>
+									<td class="item"><input class="input_text editgridh edt-qtde" type="text" id="quantidade" name="quantidade" value="" onblur="totalItem('quantidade','precounitario', 'precototal','N', 'alq_comissao', 'base_comissao', 'vlr_comissao', 'descontoItem', 'idLinhaProduto', 'alqIPI');"></td>
+									<td class="item hidden-mobile"><input class="input_text editgridh" type="text" id="precoLista" value="" readonly></td>
+									<td class="item"><input class="input_text editgridh" type="text" id="descontoItem" name="descontoItem" value="" onchange="diferencaPrecos('precounitario', 'precoLista', 'descontoItem', 'percentual'); totalItem('quantidade','precounitario','precototal','N', 'alq_comissao', 'base_comissao', 'vlr_comissao', 'descontoItem', 'idLinhaProduto');"></td>
+									<td class="item"><input class="input_text editgridh edt-valor" type="text" id="precounitario" name="precounitario" value="" onchange="diferencaPrecos('precounitario', 'precoLista', 'descontoItem', 'valor'); formatNumeroBra($(this));totalItem('quantidade','precounitario','precototal','N', 'alq_comissao', 'base_comissao', 'vlr_comissao', 'descontoItem', 'idLinhaProduto', 'alqIPI'); $('#alq_comissao').val(nroBra(comissaoGetComissao($('#descontoItem').val(), $('#idLinhaProduto').val()).toString()));"></td>
+																		<td class="item hidden-mobile"><input class="editgridh input_text" type="text" id="precototal" name="precototal" value="" readonly></td>
+									<td style="display:none" class="comissao"><input class="editgridh edt-number input_text" type="text" id="base_comissao" value=""></td>
+									<td style="display:none" class="comissao"><input class="editgridh edt-number input_text" type="text" id="desconto_item" value="" readonly></td>
+									<td style="display:none" class="comissao"><input class="editgridh edt-number input_text" type="text" id="alq_comissao" value=""></td>
+									<td style="display:none" class="comissao"><input class="editgridh input_text" type="text" id="vlr_comissao" value="" readonly></td>
+									<td style="display:none"><input class="editgridh" type="text" id="idLinhaProduto" style="width:84px;" value="" readonly></td>
+									<td style="display:none;">
+										<input type="text" style="width:84px;" class="editgrid" readonly id="peso" name="itens[peso][]" value="0"><input type="hidden" id="formatoProduto" value="S"></td>
+									<td style="min-width: 45px;">
+										<a style="margin-left: 15px; float: initial;" title="Visualizar histórico do item para o cliente" id="informacoes_adicionais_produto" class="tableIcon" onclick="visualizarAsInformacoesProdutoCliente($('#produtoId').val());"><i class="icon-info-sign"></i></a>
+										<a style="float: right; display: none;" title="Editar componentes do produto" class="tableIcon" id="editarItem" onclick="incluirEEditarItem();">
+											<i class="icon-pencil"></i>
+										</a>
+									</td>
+									<td style="min-width: 55px;"></td>
+									<td style="border-left-style: none;" align="center" class="hidden-mobile">
+										<a title="Remover item do pedido" class="tableIcon" onclick="removeDetailItem('-1');"><i class="icon-trash"></i></a>
+										<input type="hidden" id="tipoEstoque"></td>
+								</tr></table></td>
+					</tr><tr><td>
+							<a href="#" id="aNovaLinhaItem" class="link-action plus-sign has-shortcut" style="float: right;">Adicionar outro item</a>
+						</td>
+					</tr><tr><td>
+							<div class="warn-preco-abaixo" style="display:none; width:95%;"></div>
+						</td>
+					</tr><tr><td>
+							<div class="warn-desconto-acima" style="display:none; width:95%;font-size:8pt; color:#222; background:#FFFFCF url(./styles/images/ico_warn.png) no-repeat 10px 7px; padding:10px 5px 15px 35px; float:left;"></div>
+						</td>
+					</tr></table><div id="itens2"></div>
+
+				<div style="float:left; width:100%;">
+
+					<h3 class="subtitulo">Totais</h3>
+
+					<div class="linha_form wh10 margin_right">
+						<label class="titulo_input">Nº de itens</label>
+						<input type="text" class="input_text" readonly id="divNumeroItens" value="0"></div>
+
+					<div class="linha_form wh13 margin_right">
+						<label class="titulo_input">Soma das qtdes</label>
+						<input type="text" class="input_text" readonly id="campoTotalQtds" value="0"></div>
+
+					<div class="linha_form wh13 margin_right">
+						<label class="titulo_input">Desconto</label>
+						<span class="inf" title="Ex: 3,00 ou 10%">i</span>
+						<input type="text" class="input_text" name="desconto" id="desconto" value="0" onchange="totalGeral(); validarLimiteDescontoGeralVendedor();"></div>
+
+					
+					<div class="linha_form wh14 margin_right">
+						<label class="titulo_input">Prazo de entrega</label>
+						<span class="inf" title="Prazo de entrega, em dias. Ex: 3">i</span>
+						<input type="text" class="input_text" name="prazoEntrega" id="prazoEntrega"></div>
+
+					<div class="linha_form wh14 margin_right">
+						<label class="titulo_input">Desconto total da venda</label>
+						<input type="text" class="input_text" readonly id="divTotalDesconto" value="0,00"></div>
+
+											<div class="linha_form wh14 margin_right">
+							<label class="titulo_input">Total de comissões</label>
+							<input type="text" class="input_text" readonly id="divTotalComissao" value="0,00"></div>
+					
+					<div class="linha_form wh15">
+						<label class="titulo_input">Desconto total dos itens</label>
+						<input type="text" class="input_text" readonly id="divTotalDescontoItens" value="0,00"></div>
+
+					<div class="linha_form wh15 margin_right float_right">
+						<label class="titulo_input">Total da venda</label>
+						<input type="text" class="input_text venda-total" readonly id="divTotal" value="0,00"></div>
+
+					<div class="linha_form wh14 margin_right float_right">
+						<label class="titulo_input">Total dos itens</label>
+						<input type="text" class="input_text venda-total" readonly id="divSubtotal" value="0,00"></div>
+
+					<div style="display:none;">
+						<h3 class="subtitulo">Tributação</h3>
+
+						<div class="linha_form wh14 margin_right">
+							<p class="titulo_input">Total do IPI</p>
+							<input class="input_text" type="text" name="totalIPI" id="totalIPI" value="" onchange="totalGeral();"></div>
+
+						<div class="linha_form wh14 margin_right">
+							<p class="titulo_input">Total ICMS ST</p>
+							<input type="text" class="input_text" name="totalICMS" id="totalICMS" value="0,00" onchange="totalGeral();"></div>
+					</div>
+
+										<div>
+						<h3 class="subtitulo">
+							<span id="detVenda">Detalhes da venda</span>
+													</h3>
+						<div id="divExibeDetalhesVendas">
+							<div class="linha_form wh20 margin_right">
+								<label class="titulo_input">Número</label>
+								<span class="inf" title="Número do pedido">i</span>
+								<input type="text" class="input_text" name="numeroPedido" id="numeroPedido" value="" readonly><input type="hidden" class="input_text" name="numeroManual" id="numeroManual" value="0"></div>
+
+							<div class="linha_form wh15 margin_right">
+								<label class="titulo_input">Data da venda</label>
+								<span class="inf" title="(dd/mm/aaaa)">i</span>
+								<input name="data" id="data" class="input_text date-pick" type="text" onchange="formatDateField(this);" value="03/05/2019"></div>
+
+							<div class="linha_form wh15 margin_right">
+								<label for="dataSaida" class="titulo_input">Data saída</label>
+								<span class="inf" title="(dd/mm/aaaa)">i</span>
+								<input class="input_text date-pick" type="text" name="dataSaida" id="dataSaida" onchange="formatDateField(this);"></div>
+
+							<div class="linha_form wh15 margin_right">
+								<label class="titulo_input">Data prevista</label>
+								<span class="inf" title="(dd/mm/aaaa)">i</span>
+								<input name="dataPrevista" id="dataPrevista" class="input_text date-pick" type="text" onchange="formatDateField(this);"></div>
+
+							<div class="linha_form wh15 margin_right">
+								<label class="titulo_input">Ordem de compra</label>
+								<span class="inf" title="Nº da ordem de compra">i</span>
+								<input type="text" class="input_text" name="numeroDaOrdemDeCompra" id="numeroDaOrdemDeCompra" value="" maxlength="30"></div>
+
+							<div style="display: none;" id="possuiNumeroProposta">
+								<div class="linha_form wh15">
+									<label class="titulo_input">Nº da Proposta</label>
+									<input readonly type="text" class="input_text" id="nroProposta" name="nroProposta" value=""></div>
+							</div>
+
+							
+							<div style="display: none;" id="possuiIntegracaoLojaVirtual">
+								<div class="linha_form wh20 margin_right">
+									<label class="titulo_input">Número loja virtual</label>
+									<span class="inf" title="Nº do pedido da loja virtual">i</span>
+									<input type="text" class="input_text" name="numeroPedidoDaLojaVirtual" id="numeroPedidoDaLojaVirtual" value="" readonly></div>
+
+								<div class="linha_form wh20 margin_right">
+									<label class="titulo_input">Tipo Integração</label>
+									<span class="inf" title="Integração utilizada para importar o pedido.">i</span>
+									<input type="text" class="input_text" name="origemPedidoDaLojaVirtual" id="origemPedidoDaLojaVirtual" value="" readonly></div>
+
+								<div class="linha_form wh20">
+									<label class="titulo_input">Origem Canal Venda</label>
+									<span class="inf" title="Nome do Canal de Venda onde a venda foi gerada.">i</span>
+									<input type="text" class="input_text" name="origemPedidoCanalDeVenda" id="origemPedidoCanalDeVenda" value="" readonly></div>
+							</div>
+						</div>
+					</div>
+					<script type="text/javascript" src="https://www.bling.com.br/templates/frame.pagamento-1556051119.js"></script><div id="frame_pagamento">
+	<input type="hidden" id="parcelaNumber" name="parcelaNumber"><h3 id="frame_pagamento_h3" class="subtitulo">Pagamento</h3>
+
+	<div id="aviso_sem_forma" class="useful-info" style="display: none;">
+		<h3 class="alert-box-title">Aviso</h3>
+		<p>Não será possível utilizar esta seção pois você não possui forma de pagamentos cadastradas nesta conta.</p>
+		<a target="_blank" href="formas.pagamento.php">
+			<button class="button-default-novo margin-top20" type="button">Configurar formas</button>
+		</a>
+	</div>
+
+	<div id="frame_pagamento_inner">
+		<div class="linha_form wh100">
+			<table style="width: 100%"><tr><td>
+						<div class="linha_form wh100 float_left">
+							<label class="titulo_input" id="lbl_condicaoPagamento">Condição de pagamento</label>
+							<span class="inf" title="Forma de pagamento cadastrada ou número de parcelas ou prazos. Exemplo 30, 60, 3x ou 15 +2x.">i</span>
+		                    <input type="hidden" id="idFormaPagamento" name="idFormaPagamento"><input type="text" class="input_text sem-margem" id="pag_condicao" name="pag_condicao"></div>
+					</td>
+					<td style="text-align: center; vertical-align: bottom;">
+						<span class="linha_form wh100 float_left">
+							<input type="button" class="button btn" id="pag_botaoCalcular" value="Gerar Parcelas"></span>
+					</td>
+					<td>
+						<div class="linha_form wh100 float_right">
+							<label class="titulo_input" id="str_frame_pamento_categoria">Categoria</label> <span class="inf" title="Categoria de receita/despesa">i</span>
+							<input type="hidden" name="pag_categoria" id="pag_categoria"><div id="categoria" class="tree-select" tabindex="0"></div>
+						</div>
+					</td>
+				</tr></table></div>
+
+		<div style="display: none;">
+			<select class="wh100 input_text browser-default" id="pag_conta" name="pag_conta"><option value="-1" class="av">Contas a TIPO_CONTA</option><option value="3499233961" class="ap" emiteboleto="" geraremessa="" padraointegracaopagamento="N">Caixa</option><option value="5714055274" class="ap" emiteboleto="" geraremessa="" padraointegracaopagamento="N">Grupo AFJ2</option><option value="-2" class="av">Ficha Financeira</option></select><script>
+				var infoFormas = {"codigoFiscal":{"1":"01 - Dinheiro","2":"02 - Cheque","3":"03 - Cart\u00e3o de Cr\u00e9dito","4":"04 - Cart\u00e3o de D\u00e9bito","5":"05 - Cr\u00e9dito Loja","10":"10 - Vale Alimenta\u00e7\u00e3o","11":"11 - Vale Refei\u00e7\u00e3o","12":"12 - Vale Presente","13":"13 - Vale Combust\u00edvel","14":"14 - Duplicata Mercantil","15":"15 - Boleto Banc\u00e1rio","90":"90 - Sem pagamento","99":"99 - Outros"},"tpIntegra":{"1":"TEF","2":"POS"},"tband":{"1":"Visa","2":"Mastercard","3":"American Express","4":"Sorocred","5":"Diners Club","6":"Elo","7":"Hipercard","8":"Aura","9":"Cabal","99":"Outros"}};
+			</script></div>
+
+		<div class="linha_form wh100 float_right" id="pag_parcelas" style="display: none; width: 100%;">
+			<table style="width: 99%; display: block; margin-bottom: 2px;" id="pag_grparcelas" class="grid-header tabela-numerada"><tr id="pag_parcelas_header"><th id="str_frame_pagamento_dias" class="wh7">Dias</th>
+				<th id="str_frame_pagamento_data" class="wh12">Data</th>
+				<th id="str_frame_pagamento_valor" class="wh14">Valor</th>
+				<th id="str_frame_pagamento_formas" class="cupom controleMesas" style="display:none;">Forma</th>
+												<th id="str_frame_pagamento_observacao">Observação</th>
+								<th style="width:22px;"></th>
+				<th style="width:10px;"></th>
+				</tr><tr id="pag_trh" style="display: none;"><td></td>
+				</tr></table><a href="#" id="pag_aNovaLinhaParcela" class="link-action plus-sign float_right" onclick="adicionarLinhaParcela(); return false;">Adicionar outra parcela</a>
+		</div>
+	</div>
+</div>
+<div class="container-fluid" id="msg_config_gateway" style="display:none;">
+	<div id="alert-box-gateway" class="col-xs-12 alert-box alert-box-info">
+		<h3 class="alert-box-title">Informação</h3>
+		<p>Para gerar boletos será necessário <a href="https://www.bling.com.br/configuracoes.integracoes.pagamento.php" target="_blank">configurar</a> a integração de pagamentos.</p>
+	</div>
+</div>
+<div id="dados_parcela" style="display:none;">
+	<div class="linha_form wh19 margin_right">
+		<label class="titulo_input">Dias</label>
+		<input type="text" class="input_text" id="nroDiasEP"></div>
+	<div class="linha_form wh19 margin_right">
+		<label class="titulo_input">Data</label>
+		<input type="text" class="input_text" id="dataVencimentoEP"></div>
+	<div class="linha_form wh19">
+		<label class="titulo_input">Valor</label>
+		<input type="text" class="input_text" id="valorEP"></div>
+	<div class="linha_form wh19 margin_right" style="clear:left;">
+		<label class="titulo_input">Forma</label>
+		<input type="text" class="input_text" id="formaPagamentoEP"></div>
+	<div class="linha_form wh80">
+		<label class="titulo_input">Destino/Portador</label>
+		<input type="text" class="input_text" id="pag_contaEP"></div>
+	<div class="linha_form wh100">
+		<label class="titulo_input">Observação</label>
+		<input type="text" class="input_text" id="obsEP"></div>
+	<div class="linha_form wh24 margin_right">
+		<label class="titulo_input">Tipo de pagamento</label>
+		<input type="text" class="input_text" id="selectFormaEP"></div>
+	<div class="linha_form wh24 margin_right cartao">
+		<label class="titulo_input">Tipo integração</label>
+		<input type="text" class="input_text" id="tpIntegraEP"></div>
+	<div class="linha_form wh24 margin_right cartao">
+		<label class="titulo_input">CNPJ credenciadora</label>
+		<input type="text" class="input_text" id="cnpjCredenciadoraEP"></div>
+	<div class="linha_form wh25 cartao">
+		<label class="titulo_input">Bandeira</label>
+		<input type="text" class="input_text" id="tbandEP"></div>
+	<div class="linha_form wh25">
+		<label class="titulo_input">Valor de taxa</label>
+		<input type="text" class="input_text" id="valorTaxaEP"></div>
+</div>				<div id="dadosTransportadora">
+					<div style="display: none;" id="divTextoExibirOcultarTransportador">
+						<input type="hidden" name="idTransportador" id="idTransportador"><span class="linha_form wh40 margin_right">
+							<p class="titulo_input">Nome</p>
+							<input type="text" name="transportador" id="transportador" class="input_text tipsyOff"></span>
+
+						<span class="linha_form wh27 margin_right">
+							<p class="titulo_input">Frete por conta</p>
+							<select class="input_text" name="fretePorConta" id="fretePorConta"><option value="R">0 - Contratação do Frete por conta do Remetente (CIF)</option><option value="D">1 - Contratação do Frete por conta do Destinatário (FOB)</option><option value="T">2 - Contratação do Frete por conta de Terceiros</option><option value="3">3 - Transporte Próprio por conta do Remetente</option><option value="4">4 - Transporte Próprio por conta do Destinatário</option><option value="S">9 - Sem Ocorrência de Transporte</option></select></span>
+
+						<span class="linha_form wh15 margin_right">
+							<p class="titulo_input">Quantidade</p>
+							<input class="input_text" type="text" name="qtdVolumes" id="qtdVolumes"></span>
+
+						<span class="linha_form wh15">
+							<label for="pesoBruto" class="titulo_input">Peso</label><span class="inf" original-title="Em Kg">i</span>
+							<input class="input_text" type="text" name="pesoBruto" id="pesoBruto"></span>
+						<div class="linha_form wh14 margin_right">
+							<p class="titulo_input">Frete</p>
+							<span class="inf" title="Valor do frete">i</span>
+							<input type="text" class="input_text edt-valor" name="frete" id="frete" onchange="formatNumeroBra($(this));totalGeral();"></div>
+
+						<span class="linha_form wh100">
+							<div class="linha_form wh100">
+	<div class="wh100">
+		<div class="linha_form wh15 margin_right">
+			<label class="titulo_input">Logística</label>
+			<select id="integracaoLogistica" class="input_text"><option value="-1">Selecione a integração</option></select></div>
+	</div>
+
+	<div id="box_volumes" class="wh100 display-none">
+		<h3 class="subtitulo">Objetos de postagem</h3>
+		<div id="lista_volumes" class="wh100 table">
+			<div class="table-heading">
+				<div class="table-row">
+					<div class="table-head">Vol.</div>
+					<div class="table-head">Serviço</div>
+					<div class="table-head">Tracking</div>
+					<div class="table-head"></div>
+				</div>
+			</div>
+
+			<div class="table-body">
+				<div class="table-row">
+					<div class="table-cell wh2 text_center">1</div>
+					<div class="table-cell">
+						<select id="integracaoLogisticaServicos" name="idEtiqueta[]" class="no-border input_text tipsyOff"><option value="-1">Selecione o serviço</option></select></div>
+					<div class="table-cell">
+						<input id="trackingCode" name="trackingCode[]" class="no-border input_text readonly" type="text" maxlenght="20" disabled><input type="hidden" name="idEtiquetaAntiga[]" value="0"></div>
+					<div class="table-cell">
+						<input class="editgridh button-delete" type="button"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wh100">
+			<a id="dispo_servico_log" href="#" class="float_left"><i class="icon-search"></i>Verificar disponibilidade</a>
+			<a id="add_novo_volume" href="#" class="float_right">Adicionar novo objeto</a>
+		</div>
+	</div>
+</div>
+							<div class="linha_form wh100">
+								<div id="div_aviso_termino_etiquetas" style="text-indent: 2px;"></div>
+							</div>
+
+							<div class="linha_form wh100">
+								<input type="checkbox" id="etiqueta_mostrar" onchange="ajustarFormEtiqueta();" style="vertical-align: middle;" name="etiqueta_mostrar"><label for="etiqueta_mostrar">Endereço de entrega diferente da cobrança</label>
+
+								<div id="dados_endereco_etiqueta" class="margin_top10 display_none">
+									<h3 class="subtitulo">Endereço de entrega</h3>
+
+									<input type="hidden" id="idEnderecoEtiqueta" name="idEnderecoEtiqueta"><div class="linha_form wh49 margin_right">
+										<p class="titulo_input">Nome</p>
+										<input type="text" id="etiqueta_nome" name="etiqueta_nome" class="input_text"></div>
+									<div class="linha_form wh39 margin_right">
+										<p class="titulo_input">Endereço</p>
+										<input type="text" id="etiqueta_endereco" name="etiqueta_endereco" class="input_text"></div>
+									<div class="linha_form wh10">
+										<p class="titulo_input">Número</p>
+										<input type="text" id="etiqueta_numero" name="etiqueta_numero" class="input_text"></div>
+									<div class="linha_form wh18 margin_right">
+										<p class="titulo_input">Complemento</p>
+										<input type="text" id="etiqueta_complemento" name="etiqueta_complemento" class="input_text"></div>
+									<div class="linha_form wh24 margin_right">
+										<input type="hidden" id="etiqueta_id_municipio" name="etiqueta_id_municipio"><p class="titulo_input">Cidade</p>
+										<input type="text" id="etiqueta_municipio" name="etiqueta_municipio" class="input_text"></div>
+									<div class="linha_form wh5 margin_right">
+										<p class="titulo_input">UF</p>
+										<select name="etiqueta_uf" id="etiqueta_uf" class="input_text"><option value=" "> UF ... </option><option value="AC">AC</option><option value="AL">AL</option><option value="AM">AM</option><option value="AP">AP</option><option value="BA">BA</option><option value="CE">CE</option><option value="DF">DF</option><option value="ES">ES</option><option value="EX">EX</option><option value="GO">GO</option><option value="MA">MA</option><option value="MG">MG</option><option value="MS">MS</option><option value="MT">MT</option><option value="PA">PA</option><option value="PB">PB</option><option value="PE">PE</option><option value="PI">PI</option><option value="PR">PR</option><option value="RJ">RJ</option><option value="RN">RN</option><option value="RO">RO</option><option value="RR">RR</option><option value="RS">RS</option><option value="SC">SC</option><option value="SE">SE</option><option value="SP">SP</option><option value="TO">TO</option></select></div>
+									<div class="linha_form wh15 margin_right float_left input-cep">
+										<p class="titulo_input">CEP</p>
+										<input type="text" id="etiqueta_cep" name="etiqueta_cep" class="input_text" maxlength="10"><div class="input_icones">
+											<a title="Buscar CEP" href="#" class="formIcon" id="buscaEnderecoDiferente">
+												<i class="icon-search"></i>
+											</a>
+										</div>
+									</div>
+									<div class="linha_form wh18 margin_right">
+										<p class="titulo_input">Bairro</p>
+										<input type="text" id="etiqueta_bairro" name="etiqueta_bairro" class="input_text"></div>
+									<div class="linha_form wh15" id="div_pais" style="display: none;">
+										<p class="titulo_input">País</p>
+										<input type="text" name="etiqueta_nomePais" class="input_text tipsyOff" id="etiqueta_nomePais" size="42" onkeydown="clearHidenResult(event,$('#etiqueta_idPais'));" maxlength="60"></div>
+								</div>
+							</div>
+						</span></div>
+					</div>
+										<div>
+						<h3 class="subtitulo">Dados adicionais
+												</h3>
+						<div id="divTextoExibirOcultarAdicionais">
+							<div class="linha_form wh100">
+								<label class="titulo_input">Observações</label>
+								<span class="inf" title="Esta informação será impressa na venda, na fatura e transferida para as observações da nota.">i</span>
+								<textarea class="input_textarea full" name="observacoes" id="observacoes"></textarea></div>
+
+							<div class="linha_form wh100">
+								<label class="titulo_input">Observações Internas</label>
+								<span class="inf" title="Esta informação é de uso interno, portanto não será impressa.">i</span>
+								<textarea class="input_textarea full" name="observacaoInterna" id="observacaoInterna"></textarea></div>
+						</div>
+					</div>
+					<div class="linha_form wh100">
+						<div class="nomessage" id="mensagem"></div>
+					</div>
+
+					<div class="linha_form wh100">
+						<div id="controls" style="float:left;">
+							<input id="botaoSalvar" type="button" value="Salvar" class="button-default" onclick="salvar();return false;" data-system-action="VendasRegistroIE"><input id="botaoCancelar" type="button" value="Cancelar" class="button" onclick="cancelarVenda();return false;"></div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="box-side"></div>
+
+	<img id="name_ui_arrow_left" height="0" src="images/img_name_menu.gif" width="0" align="top" alt=""><div id="slotEstoqueProduto" style="padding: 10px; border: solid 1px #999; background: #EEE; width: 200px;" class="menu_ui" onmouseover="this.style.display='block';" onmouseout="this.style.display='none'">
+		<div id="tplEstoqueProduto"> </div>
+	</div>
+	<img id="name_ui_arrow_right" src="images/img_name_menu_flip.gif" width="0" align="top" alt=""><input type="hidden" id="valorIPI" value="N"><input type="hidden" name="parametro_adicionais_comissao" id="parametro_adicionais_comissao"></div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.inf').tipsy({trigger: 'click', gravity: 'w', delayIn: 500, delayOut: 1000});
+		$('.date-pick').datepicker( {
+			startDate: '01/01/1970'
+		});
+		setIdCampoValor("total", "", "", "");
+		setIdCampoData("data");
+		setLabelContaCreditoDebito("Crédito", "Receber");
+
+		$("#etiqueta_municipio").autocomplete({
+			source: "services/municipio.lookup.php",
+			select: function(event, ui) {
+				setIdMunicipioEtiqueta(ui["item"]);
+			},
+			change: function(event, ui) {
+				testCompleter($(this), $("#etiqueta_id_municipio"), "Município não encontrado no sistema");
+			},
+			delay:250,
+			minLength:2,
+			selectOnly:true
+		});
+		$("#etiqueta_cep").keypress(function() {txtBoxFormat(this.form, this.name, '99.999-999', this)});
+
+	});
+</script><div class="invisivel">
+	<form id="form_alteracao_situacao_pedidos_selecionados" name="form_alteracao_situacao_pedidos_selecionados" onsubmit="return false">
+		<div id="situacoes_vendas"></div>
+
+		
+		<span class="linha_form wh100">
+			<label class="label-item-form" for="ocorrencia_texto">Descrição da ocorrência</label>
+			<textarea id="ocorrencia_texto" class="item-form textarea-item-form resize-none" cols="98" rows="2" size="45"></textarea></span>
+	</form>
+</div>
+
+<div id="lista">
+<div class="box-content">
+	<div class="search-bar">
+		<div class="titulo">Pedidos de venda</div>
+		<div class="top-search">
+			<form id="vendasFiltros">
+				<div id="search">
+					<div id="mini-pesquisa-area">
+	<div id="mini-pesquisa">
+		<div class="left-align">
+			<div id="search-input">
+				<input type="text" data-filter="pesquisa" id="pesquisa-mini" class="pesquisa" name="pesquisa-mini" placeholder="Pesquisar"><span id="box-clear-icon">
+					<i title="Limpar o campo" class="clear-input invisivel icon-times-circle"></i>
+				</span>
+			</div>
+		</div>
+		<div class="left-align">
+			<div class="search-actions">
+				<div id="btn-mini-search" class="search-action btn-secundary">
+					<i class="fas fa-search fa-lg centralized"></i>
+				</div>
+				<div id="link-pesquisa" class="search-filter-action btn-secundary">
+					<span>FILTROS</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>					<div id="panel-area">
+					<div id="panel">
+						<input type="hidden" id="idContatoConsulta" value="0"><table class="layout" summary=""><tr><td style="width: 150px; min-width: 150px; padding-right: 15px;">
+							<div>
+								<div class="label wh100">Período</div>
+								<ul class="wh100"><li><a href="#" class="item" id="opc-ultimos">Últimos incluídos</a></li>
+									<li><a href="#" class="item selected" id="opc-ult30">Últimos 30 dias</a></li>
+									<li><a href="#" class="item" id="opc-mes">Do mês</a></li>
+									<li><a href="#" class="item" id="opc-data">Do dia</a></li>
+									<li><a href="#" class="item" id="opc-periodo">De um período</a></li>
+									<li><a href="#" class="item" id="opc-previstos">Previstos para</a></li>
+								</ul></div>
+
+							<div id="divPsqLoja" class="margin_top10" style="display: inline-block;">
+								<div class="label wh100">Loja</div>
+								<span class="linha_form wh100">
+									<select name="lojasVinculadas" id="lojasVinculadas" class="input_text"></select></span>
+
+								<div id="unidadesNegocio" style="display:none">
+									<div class="label wh100">Unidades de Negócio</div>
+									<span class="linha_form wh100">
+										<select name="unidadesNegocioSelect" id="unidadesNegocioSelect" class="input_text" onchange="listarVendasUnidadeNegocio($('#unidadesNegocioSelect').val())"><option value="0">Nenhuma unidade</option></select></span>
+								</div>
+							</div>
+						</td>
+
+						<td id="div_datas" style="width: 160px; min-width: 160px; padding-right: 15px; display: none;">
+							<div class="periodos">
+							<div id="div-mes" style="display:none;">
+								<div class="label wh100">Mês</div>
+								<div class="seta-e" onclick="incrementaMeses(-1);"></div>
+								<div class="inline"><input type="text" id="mes" name="mes" size="5" onchange="incrementaMeses(0);"></div>
+								<div class="seta-d" onclick="incrementaMeses(+1);"></div>
+							</div>
+							<div id="div-data" style="display:none; width: 160px;">
+								<div class="label wh100">Dia</div>
+									<div class="seta-e" onclick="incrementaDias(-1);"></div>
+									<div class="inline"><input class="date-pick" type="text" id="p-data" name="p-data" size="10" onchange="formatDateField(this); incrementaDias(0);"></div>
+									<div class="seta-d" onclick="incrementaDias(+1);"></div>
+							</div>
+							<div id="div-periodo" style="display:none;">
+								<div class="label wh100">Datas</div>
+								<table cellspacing="5" summary=""><tr><td>De:</td><td><input class="date-pick" type="text" id="data-ini" name="data-ini" size="10" onchange="formatDateField(this)"></td></tr><tr style="margin-bottom: 2px; display: block; width: 100%;"></tr><tr><td>Até:</td><td><input class="date-pick" type="text" id="data-fim" name="data-fim" size="10" onchange="formatDateField(this)"></td></tr></table></div>
+							</div>
+						</td>
+
+						<td class="vseparator"></td>
+						<td class="filtro-situacoes" style="width: 160px; min-width: 160px; padding: 0 10px;">
+							<div class="label">Situação</div>
+							<ul><li><a href="#" class="item-sit" id="sit-">Todos</a></li>
+							</ul></td>
+						<td class="vseparator"></td>
+												<td id="div_outros" style="width: 262px; padding-left: 10px;">
+							<div class="label" style="width: calc(100% + 4px);">Outras opções de pesquisa</div>
+							<div id="div_outras" style="display: inline-block;">
+								<table class="fields float_left" summary="" style="width: 262px; margin-right: 15px;"><tr id="divPsqVendedor"><td>
+											<label for="psqVendedor" class="caption display-block">Vendedor</label>
+											<input type="hidden" id="idPsqVendedor" value="0"><input type="text" id="psqVendedor" class="tipsyOff wh100" size="30" onkeydown="limparCodigoVendedor(event);" onkeypress="clearHidenResult(event,$('#idPsqVendedor'));"></td>
+									</tr><tr style="display:none;"><td valign="top">
+											<div class="wh100">
+												<label for="pesquisa_bairro" class="caption display-block">Bairro</label>
+												<input type="text" id="pesquisa_bairro" name="pesquisa_bairro" size="30" class="tipsyOff wh100"></div>
+											<div class="wh75 float_left">
+												<label for="pesquisa_cidade" class="caption display-block">Cidade</label>
+												<input type="text" id="pesquisa_cidade" name="pesquisa_cidade" size="30" class="tipsyOff wh97" onkeypress="clearHidenResult(event,$('#idMunicipioPsq'));"><input type="hidden" name="idMunicipioPsq" id="idMunicipioPsq"><div id="cidade-message"></div>
+											</div>
+											<div class="wh25 float_left">
+												<label for="pesquisa_uf" class="caption display-block">UF</label>
+												<select name="pesquisa_uf" id="pesquisa_uf" class="wh100"><option value=" "> UF ... </option><option value="AC">AC</option><option value="AL">AL</option><option value="AM">AM</option><option value="AP">AP</option><option value="BA">BA</option><option value="CE">CE</option><option value="DF">DF</option><option value="ES">ES</option><option value="EX">EX</option><option value="GO">GO</option><option value="MA">MA</option><option value="MG">MG</option><option value="MS">MS</option><option value="MT">MT</option><option value="PA">PA</option><option value="PB">PB</option><option value="PE">PE</option><option value="PI">PI</option><option value="PR">PR</option><option value="RJ">RJ</option><option value="RN">RN</option><option value="RO">RO</option><option value="RR">RR</option><option value="RS">RS</option><option value="SC">SC</option><option value="SE">SE</option><option value="SP">SP</option><option value="TO">TO</option></select></div>
+											<div id="uf-message"></div>
+										</td>
+									</tr><tr id="pesqCodRastreio"><td>
+											<div class="wh50 float_left">
+												<label for="codRastreio" class="caption display-block">Código de rastreio</label>
+												<input type="text" id="codRastreio" name="codRastreio" class="tipsyOff wh95" size="30" maxlength="13" onkeypress="if(event.keyCode==13){pesquisarMini();}"></div>
+											<div class="wh50 float_left">
+												<label for="situacaoObjetoCorreios" class="caption display-block">Rastreamento</label>
+												<select id="situacaoObjetoCorreios" name="situacaoObjetoCorreios" class="wh100"><option value="" selected>Todos</option><option value="0">Postado</option><option value="1">Em andamento</option><option value="2">Não entregue</option><option value="3">Entregue</option></select></div>
+										</td>
+									</tr><tr><td>
+											<label for="nomePsqProduto" class="caption display-block">Item</label>
+											<input type="hidden" id="idPsqProduto" name="idPsqProduto" value="0"><input type="text" id="nomePsqProduto" name="nomePsqProduto" class="tipsyOff wh100" size="30" data-clear-result="idPsqProduto"></td>
+									</tr><tr><td>
+											<label for="nomePsqComponente" class="caption display-block">Componente</label>
+											<input type="hidden" id="idPsqComponente" name="idPsqComponente" value="0"><input type="text" id="nomePsqComponente" name="nomePsqComponente" class="tipsyOff wh100" size="30" data-clear-result="idPsqComponente"></td>
+									</tr><tr><td>
+											<div>
+												<label for="psqNumeroPedidoDaLojaVirtual" class="caption display-block">N° do pedido na loja virtual</label>
+												<input type="text" id="psqNumeroPedidoDaLojaVirtual" name="psqNumeroPedidoDaLojaVirtual" class="tipsyOff wh100" size="30" maxlength="15" onkeypress="if(event.keyCode==13){pesquisarMini();}"></div>
+										</td>
+									</tr></table></div>
+						</td>
+
+						<td style="padding-right: 15px;">
+							<div class="label"> </div>
+							<div class="float_left" style="width: 262px;">
+								<div>
+									<label for="psqNumeroDaOrdemDeCompra" class="caption display-block">N° da ordem de compra</label>
+									<input type="text" id="psqNumeroDaOrdemDeCompra" name="psqNumeroDaOrdemDeCompra" class="tipsyOff wh100" size="30" maxlength="30" onkeypress="if(event.keyCode==13){pesquisarMini();}"></div>
+								<br><br><div id="divPsqTransportador">
+									<label for="psqTransportador" class="caption display-block">Nome do transportador</label>
+									<input type="text" id="psqTransportador" name="psqTransportador" class="tipsyOff wh100" onkeypress="if(event.keyCode==13){pesquisarMini();}"></div>
+
+								<div style="width: 265px; display: inline-block;">
+									<label class="caption display-block">Busca customizada</label>
+									<div class="wrapper-select-filtro-ini"><select id="filtroDinamico" onchange="alterarOpcoesFiltro();"><option value="tipoPessoa">Tipo Contato</option><option value="c§uf">UF Contato</option></select></div><div class="wrapper-select-filtro-fim" style=""><select id="filtroDinamico_tipoPessoa[value]" onchange="inserirParFiltro(this);"><option value="">Todas</option><option value="F">Física</option><option value="J">Jurídica</option><option value="E">Estrangeiro</option></select></div><div class="wrapper-select-filtro-fim" style="display:none;"><select id="filtroDinamico_c§uf[value]" onchange="inserirParFiltro(this);"><option value="">Todas</option><option value=" "> UF ... </option><option value="AC">AC</option><option value="AL">AL</option><option value="AM">AM</option><option value="AP">AP</option><option value="BA">BA</option><option value="CE">CE</option><option value="DF">DF</option><option value="ES">ES</option><option value="EX">EX</option><option value="GO">GO</option><option value="MA">MA</option><option value="MG">MG</option><option value="MS">MS</option><option value="MT">MT</option><option value="PA">PA</option><option value="PB">PB</option><option value="PE">PE</option><option value="PI">PI</option><option value="PR">PR</option><option value="RJ">RJ</option><option value="RN">RN</option><option value="RO">RO</option><option value="RR">RR</option><option value="RS">RS</option><option value="SC">SC</option><option value="SE">SE</option><option value="SP">SP</option><option value="TO">TO</option></select></div>								</div>
+								<div id="elementosFiltroDinamico" style="margin-top:10px;"></div>
+							</div>
+						</td>
+						</tr></table></div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="datatable-area">
+		<div class="warn-search" style="display:none;"></div>
+		<div id="divMensagemIntegracao" class="container-fluid" style="display:none; padding-left:0px; padding-right:0px;">
+			<div class="col-xs-12 alert-box alert-box-info">
+				<span id="mostraOcultaMensagemIntegracao" class="glyphicon icon-chevron-up" data-toggle="collapse" data-parent="#accordion" href="#collapse6" style="float:right;" onclick="mostraOcultaMensagemIntegracao();"></span>
+				<h3 class="alert-box-title" style="margin-top:10px; margin-bottom:15px;">Aviso</h3>
+				<p id="mensagemIntegracao"></p>
+			</div>
+		</div>
+		<div id="datatable"></div>
+		<div id="divPaginacaoBottom"></div>
+	</div>
+</div>
+
+<div class="side box-side">
+	<div class="sidebar">
+	<input class="btn-add" type="button" value="Incluir um pedido" onclick="incluirVenda()" data-system-action="VendasRegistroIE"><input type="hidden" name="tipoIntegraçãoHidden" id="tipoIntegraçãoHidden"><div class="tabs-side">
+		<ul><li><a href="#div_side_info">Info</a></li>
+			<li><a href="#div_side_acoes">Ações</a></li>
+		</ul><div id="div_side_info">
+			<div id="totalVendas"></div>
+			<div id="selecionados"></div>
+		</div>
+		<div id="div_side_acoes">
+			<div class="actions">
+				<ul><li><a href="#" class="act-gerar-notas ico-xls">Gerar Notas Fiscais selecionadas</a></li>
+																<li><a href="#" class="act-gerar-nfces ico-xls">Gerar NFC-es selecionadas</a></li>
+																					<li><a href="#" class="act-gerar-comprovantes ico-xls">Gerar Comprovantes selecionados</a></li>
+													<li><a href="#" class="act-exportar ico-xls">Exportar dados para planilha</a></li>
+												<li><a href="#" class="act-relatorio ico-print">Imprimir</a></li>
+						<li><a href="#" class="act-impressaoEtiquetas ico-print">Imprimir etiquetas selecionados</a></li>
+						<li><a href="#" class="act-print-selecionados ico-print">Imprimir Selecionado(s)</a></li>
+																<li><a href="#" class="act-print-opSelecionados ico-print">Imprimir ordens de produção selecionadas</a></li>
+																<li><a href="#" class="act-alterarSituacaoPedidosSelecionado ico-share" data-system-action="VendasGerenciarSituacao">Mudar Situação pedidos selecionados</a></li>
+						<li>
+						<li id="enviarDadosLojaVirtual"><a href="#list" class="ico-none ico-refresh" onclick="sendDataShopStore();">Enviar dados Loja Virtual</a></li>
+																																									<li><a href="#list" class="act-faturarPedidosSelecionados ico-none ico-barcode">Faturar pedidos selecionados</a></li>
+																										<li><a href="#" class="act-etiquetas ico-print">Imprimir etiquetas de transporte</a></li>
+						<li><a href="#" class="act-declaracao-conteudo ico-print">Imprimir declarações de conteúdo</a></li>
+										<li><a href="#" class="act-exportar-enderecos ico-xls">Exportar endereços selecionados para planilha</a></li>
+									</ul></div>
+		</div>
+	</div>
+	</div>
+</div>
+
+<form id="direcionador" action="relatorios/venda.impressao.php" method="post" target="_blank">
+	<input type="hidden" name="idVenda" id="idVenda"><input type="hidden" name="imprimeDetalhado" id="imprimeDetalhado" value="N"><input type="hidden" name="imprimeOrdem" id="imprimeOrdem" value="I"></form>
+
+<form id="direcionadorImpressaoOrdemDeProducao" action="relatorios/ordem.producao.impressao.php" method="post" target="_blank">
+	<input type="hidden" name="idPedidoVenda" id="idPedidoVenda"><input type="hidden" name="imprimeOrdemProducao" id="imprimeOrdemProducao" value="I"><input type="hidden" name="ocultarItensTerceiros" id="ocultarItensTerceiros" value="N"></form>
+
+<form id="FormAction" name="FormAction" action="conta.gerar.carne.php" method="post" target="_blank"></form>
+
+</div>
+
+<div id="vendasWait" class="pleasewait"></div>
+<div id="impressaoWait" class="pleasewait"></div>
+<div id="popUpMenu" class="popUpMenu">
+	<ul id="listaMenu" class="listaMenu"><li id="im_1"><img src="images/clonar.gif">Clonar Venda</li>
+					<li id="im_2"><img src="images/n.gif">Gerar Nota Fiscal</li>
+					<li id="im_nfce"><img src="images/n.gif">Gerar NFC-e</li>
+							<li id="im_3" data-system-action="VendasLancarContas"><img src="images/xc.gif">Estornar Contas</li>
+			<li id="im_4" data-system-action="VendasLancarContas"><img src="images/c.gif">Lançar Contas</li>
+									<li id="im_5" data-system-action="VendasLancarEstoque"><img src="images/xe.gif">Estornar Estoque</li>
+			<li id="im_6" data-system-action="VendasLancarEstoque"><img src="images/e.gif">Lançar Estoque</li>
+							<li id="im_7"><img src="images/printer2.gif">Imprimir etiqueta</li>
+			<li id="im_17"><img src="images/printer2.gif">Imprimir carnê</li>
+			<li id="im_8" class="separador">
+			<li id="im_9"><img src="images/mail2.gif">Enviar por email</li>
+			<li id="im_10"><img src="images/printer2.gif">Imprimir</li>
+			<li id="im_19"><img src="images/printer2.gif">Imprimir c/ detalhes</li>
+			<li id="im_25"><img src="images/printer2.gif">Imprimir Comprovante</li>
+									<li id="im_20"><img src="images/printer2.gif">Ordem de produção</li>
+				<li id="im_11" class="separador">
+						<li id="im_cfe_imprimir"><img src="images/cfe.png">Imprimir CF-e</li>
+		<li id="im_cfe_cancelar"><img src="images/cfe.png">Cancelar CF-e</li>
+				<!-- Serviços dos Correios -->
+					<li id="im_55"><img src="images/printer2.gif">Imprimir AR</li>
+			<li id="im_66"><img src="images/mail2.gif">Enviar Rastreio por email</li>
+			<li id="im_27"><img src="images/impressaoEtiquetasCorreios.png">Imprimir Etiqueta de Envio</li>
+			<li id="im_28"><img src="images/impressaoEtiquetasCorreios.png">Imprimir Declaração de Conteúdo</li>
+				<li id="im_29"><span style="font-size: 12pt;" class="fab fa-whatsapp"></span> Enviar por Whatsapp</li>
+	</ul></div>
+</div>
+
+<input type="hidden" id="dec_qtde" value="2"><input type="hidden" id="dec_valor" value="2"><input type="hidden" id="path_arquivo_ent" value="/opt/ACBrMonitor/ENT.TXT"><input type="hidden" id="path_arquivo_sai" value="/opt/ACBrMonitor/SAI.TXT"><input type="hidden" id="vendasNovoItemAutomaticamente" value="N"><input type="hidden" id="exibeTotais" value="S"><input type="hidden" id="cupom:path_arquivo_ent" value="/opt/ACBrMonitor/ENT.TXT"><input type="hidden" id="cupom:path_arquivo_sai" value="/opt/ACBrMonitor/SAI.TXT"><input type="hidden" id="registrosPorPagina" value="0"><!-- Envio de Dados Para Lojas Virtuais --><!-- Envio de Dados Para Lojas Virtuais --><div id="dialogSendData" class="wh100" style="text-align:left; display:none;">
+	<span class="linha_form wh100">
+		<label>Selecione a loja que deseja utilizar para esta operação:</label><br><select id="listaLojasAtivasGeneral" style="width:100%;margin:5px 0;" onchange="setarTipoIntegracaoModal();"></select></span>
+	<!-- Nr NFe -->
+	<span id="sp_enviar_numero_nfe_loja_virtual" class="linha_form wh30 margin_right float_left display_none">
+		<label>Número Nfe</label><br><select id="enviar_numero_nfe_loja_virtual" class="wh100"><option value="false" selected>Não</option><option value="true">Sim</option></select></span>
+	<!-- Serie NFe -- >
+	<span id="sp_enviar_serie_loja_virtual" class="linha_form wh37 margin_right float_left display_none">
+		<label>Série Nfe</label><br />
+		<select id="enviar_serie_loja_virtual" class="wh100">
+			<option value="false" selected='selected'>Não</option>
+			<option value="true" >Sim</option>
+		</select>
+	</span>
+	<!-- Situação NFe -- >
+	<span id="sp_enviar_situacao_loja_virtual" class="linha_form wh30 margin_right float_left display_none">
+		<label>Situação Nfe</label><br />
+		<select id="enviar_situacao_loja_virtual" class="wh100">
+			<option value="false" selected='selected'>Não</option>
+			<option value="true" >Sim</option>
+		</select>
+	</span>
+	<!-- Chave de Acesso NFe -- >
+	<span id="sp_enviar_chave_acesso_loja_virtual" class="linha_form wh30 margin_right float_left display_none">
+		<label>Chave de Acesso</label><br />
+		<select id="enviar_chave_acesso_loja_virtual" class="wh100">
+			<option value="false" selected='selected'>Não</option>
+			<option value="true" >Sim</option>
+		</select>
+	</span>
+	<!-- Código Rastreio -->
+	<span id="sp_enviar_rastreamento_loja_virtual" class="linha_form wh35 margin_right float_left display_none">
+		<label>Código de Rastreamento</label><br><select id="enviar_rastreamento_loja_virtual" class="wh100"><option value="false" selected>Não</option><option value="true">Sim</option></select></span>
+	<!-- Link Danfe -- >
+	<span id="sp_enviar_link_danfe_loja_virtual" class="linha_form wh30 margin_right float_left display_none">
+		<label>Link da DANFE</label><br />
+		<select id="enviar_link_danfe_loja_virtual" class="wh100">
+			<option value="false" selected='selected'>Não</option>
+			<option value="true" >Sim</option>
+		</select>
+	</span>
+	<!-- Enviar NFe -->
+	<span id="sp_enviar_nfe_loja_virtual" class="linha_form wh30 margin_right float_left display_none">
+		<label>Enviar Dados NFe</label><br><select id="enviar_nfe_loja_virtual" class="wh100"><option value="false" selected>Não</option><option value="true">Sim</option></select></span>
+
+	<!-- Enviar Status -->
+	<span id="sp_enviar_status_loja_virtual" class="linha_form wh30 margin_right float_left display_none">
+		<label>Enviar Troca de Status</label><br><select id="enviar_status_loja_virtual" class="wh100"><option value="false" selected>Não</option></select></span>
+
+	<!-- Nr Pedido -->
+	<span id="sp_enviar_numero_venda_loja_virtual" class="linha_form wh32 margin_right float_left display_none">
+		<label for="enviar_numero_venda_loja_virtual">Enviar N° Ped. Venda</label>
+		<select id="enviar_numero_venda_loja_virtual" name="enviar_numero_venda_loja_virtual" class="wh100"><option value="false" selected>Não</option><option value="true">Sim</option></select></span>
+
+	<!-- Enviar Pedido -->
+	<span id="sp_enviar_pedido_loja_virtual" class="linha_form wh30 margin_right float_left display_none">
+		<label for="enviar_pedido_loja_virtual">Enviar/Trasferir Pedido para Loja.</label>
+		<select id="enviar_pedido_loja_virtual" name="enviar_pedido_loja_virtual" class="wh100"><option value="false" selected>Não</option><option value="true">Sim</option></select></span>
+
+	<div id="infoWarn" class="warn" style="height: auto; margin-top: 92px; padding-top: 1px; padding-bottom: 10px;">
+		Esta opção realizará o envio das informações selecionadas para o(s) pedido(s) de sua loja virtual.<br>Deseja prosseguir?<br></div>
+</div>
+
+
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		setAppAcessoHardware('appJava');
+		framePagamento = new FramePayment({
+			showPaymentMethods: true,
+			afterLoad: function() {
+				initForm({'data': '03/05/2019', 'idEmpresa': 3499233703});
+			},
+			type: 2,
+			afterChangeMethods: totalGeral,
+			'permissions': {
+				'editPaymentMethod': true			}
+		});
+	});
+</script><div id="applet_cupom"></div>
+<input type="hidden" id="modulo" value="Vendas"><div id="waitPopup" class="pleasewait"></div>
+
+    </div>
+    <footer id="footer-container">
+        <div id="footer">
+            <div class="coluna left">
+                <a>Organisys Software</a>            </div>
+            <div class="coluna right">
+                <a id="releases" href="releases.php" style="">Versão 24/04/2019</a>            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -59,19 +59,28 @@
  
 		    </tr></h3>
   <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="tab-pane fade show active" id="nav-home1" role="tabpanel" aria-labelledby="nav-home-tab1">
                               <table class="table table-hover table-dark">
                                   <thead>
                                       <tr>
                                         <th scope="col">#</th>
+                                        <th scope="col">NfDeEntrada</th>
                                         <th scope="col">nome</th>
-                                        <th scope="col">NF entrada</th>
                                         <th scope="col">data e-mail</th>
+                                        <th scope="col">transpotadora</th>
                                       </tr>
                                   </thead>
                             </div>
+                            {% for funcionario in funcionarios %}
+                                          <tr> 
+                                              <td>{{ funcionario.numero }}</td>
+                                              <td>{{ funcionario.NfDeEntrada }}</td>
+                                              <td>{{ funcionario.nome }}</td>
+                                              <td>{{ funcionario.data }}</td>
+                                              <td>{{ funcionario.transpotadora }}</td>
+                                              {% endfor %}
   <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="tab-pane fade " id="nav-home2" role="tabpanel2" aria-labelledby="nav-home-tab2">
                               <table class="table table-hover table-dark">
                                   <thead>
                                       <tr>
@@ -94,27 +103,27 @@
                                       </tr>
                                   </thead>
                             </div>                                                    
-                {% for funcionario in funcionarios %}
-                    <tr> 
-                        <td>{{ funcionario.numero }}</td>
-                        <td>{{ funcionario.vendedor }}</td>
-                        <td>{{ funcionario.data }}</td>
-                        <td>{{ funcionario.nome }}</td>
-                        <td>{{ funcionario.NfDeOrigem }}</td>
-                        <td>{{ funcionario.NfDeEntrada }}</td>
-                        <td>{{ funcionario.NfDeSAida }}</td>
-                        <td>{{ funcionario.efeito }}</td>
-                        <td>{{ funcionario.NumeroConserto }}</td>
-                        <td>{{ funcionario.transpotadora }}</td>
-                        <td>{{ funcionario.CustoColeta }}</td>
-                        <td>{{ funcionario.CustoIda }}</td>
-                        <td>{{ funcionario.CustoVenda }}</td>
-                         
-                        <td><center><a class="btn btn-sm btn-warning" href="{% url 'website:atualiza_funcionario' pk=funcionario.id %}"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a class="btn btn-sm btn-danger" href="{% url 'website:deleta_funcionario' pk=funcionario.id %}"><span class="glyphicon glyphicon-trash"></span> Delete</a></center></td>
-                    </tr>
-                {% endfor %}
-                <div class="container">
-  <div class="container">
+                                      {% for funcionario in funcionarios %}
+                                          <tr> 
+                                              <td>{{ funcionario.numero }}</td>
+                                              <td>{{ funcionario.vendedor }}</td>
+                                              <td>{{ funcionario.data }}</td>
+                                              <td>{{ funcionario.nome }}</td>
+                                              <td>{{ funcionario.NfDeOrigem }}</td>
+                                              <td>{{ funcionario.NfDeEntrada }}</td>
+                                              <td>{{ funcionario.NfDeSAida }}</td>
+                                              <td>{{ funcionario.efeito }}</td>
+                                              <td>{{ funcionario.NumeroConserto }}</td>
+                                              <td>{{ funcionario.transpotadora }}</td>
+                                              <td>{{ funcionario.CustoColeta }}</td>
+                                              <td>{{ funcionario.CustoIda }}</td>
+                                              <td>{{ funcionario.CustoVenda }}</td>
+                                              
+                                              <td><center><a class="btn btn-sm btn-warning" href="{% url 'website:atualiza_funcionario' pk=funcionario.id %}"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a class="btn btn-sm btn-danger" href="{% url 'website:deleta_funcionario' pk=funcionario.id %}"><span class="glyphicon glyphicon-trash"></span> Delete</a></center></td>
+                                          </tr>
+                                      {% endfor %}
+                                      <div class="container">
+                        <div class="container">
   
   <!-- The Modal -->
   <div class="modal fade" id="myModal">
